@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-cyber-bg text-cyber-text antialiased;
+  }
+
+  ::selection {
+    @apply bg-cyber-accent/30 text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-2xl border border-cyber-border bg-cyber-card;
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  @media (min-width: 768px) {
+    .glass-card {
+      @apply backdrop-blur-xl;
+    }
+  }
+
+  .nav-bar {
+    @apply bg-cyber-card/95;
+  }
+
+  @media (min-width: 768px) {
+    .nav-bar {
+      @apply bg-cyber-card/80 backdrop-blur-xl;
+    }
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    @apply border-cyber-accent/30;
+    box-shadow:
+      0 8px 40px rgba(0, 255, 170, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .cyber-gradient-text {
+    @apply bg-gradient-to-r from-cyber-accent via-cyber-cyan to-cyber-purple bg-clip-text text-transparent;
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold tracking-tight md:text-4xl;
+  }
+
+  .section-subheading {
+    @apply mt-3 max-w-2xl text-cyber-muted;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-24;
+  }
+
+  .stat-card {
+    @apply rounded-xl border border-cyber-border/70 bg-white/[0.03] px-4 py-4 transition-colors hover:border-cyber-accent/30 hover:bg-white/[0.05];
+  }
+
+  .form-input {
+    @apply w-full rounded-xl border border-cyber-border bg-cyber-surface/80 px-4 py-3 text-sm text-cyber-text outline-none transition-colors placeholder:text-cyber-muted/60 focus:border-cyber-accent/50 focus:ring-2 focus:ring-cyber-accent/20;
+  }
+
+  .skill-category-card {
+    @apply bg-cyber-card/80 backdrop-blur-xl;
+    box-shadow:
+      0 4px 30px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .skill-tag {
+    @apply inline-flex min-w-[5.5rem] items-center justify-center rounded-xl border border-cyber-border/60 bg-cyber-bg/40 px-4 py-2 text-center text-sm text-cyber-text transition-all duration-300;
+  }
+
+  .skill-tag:hover {
+    @apply border-cyber-accent/35 bg-cyber-accent/10 text-cyber-text;
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(45, 212, 191, 0.12);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .page-enter {
+    animation: page-enter 0.25s ease-out both;
+  }
+
+  .fade-in {
+    opacity: 0;
+    will-change: opacity, transform;
+    transition:
+      opacity 0.35s ease-out,
+      transform 0.35s ease-out;
+  }
+
+  .fade-in-visible {
+    opacity: 1;
+  }
+
+  .fade-in-up {
+    transform: translateY(18px);
+  }
+
+  .fade-in-up.fade-in-visible {
+    transform: translateY(0);
+  }
+
+  .fade-in-down {
+    transform: translateY(-18px);
+  }
+
+  .fade-in-down.fade-in-visible {
+    transform: translateY(0);
+  }
+
+  .fade-in-left {
+    transform: translateX(18px);
+  }
+
+  .fade-in-left.fade-in-visible {
+    transform: translateX(0);
+  }
+
+  .fade-in-right {
+    transform: translateX(-18px);
+  }
+
+  .fade-in-right.fade-in-visible {
+    transform: translateX(0);
+  }
+
+  .fade-in-none {
+    transform: none;
+  }
+
+  .hero-fade-in {
+    animation: fade-in-up 0.45s ease-out both;
+  }
+
+  .hero-fade-in-delay-1 {
+    animation: fade-in-up 0.45s ease-out 0.08s both;
+  }
+
+  .hero-fade-in-delay-2 {
+    animation: fade-in-up 0.45s ease-out 0.16s both;
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter,
+  .hero-fade-in,
+  .hero-fade-in-delay-1,
+  .hero-fade-in-delay-2 {
+    animation: none;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 170, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 170, 0.35);
+}

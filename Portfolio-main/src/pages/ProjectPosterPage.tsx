@@ -1,0 +1,56 @@
+import { useParams } from "@/lib/router";
+import { GlassCard } from "@/components/ui/GlassCard";
+import { Button } from "@/components/ui/Button";
+import { FadeIn, PageTransition } from "@/components/motion/FadeIn";
+import { ProjectSubpageHeader } from "@/components/projects/ProjectSubpageHeader";
+import { getProjectBySlug, getProjectDocument } from "@/lib/projects";
+import { withBasePath } from "@/lib/paths";
+import { useDocumentTitle } from "@/lib/use-document-title";
+import { NotFoundPage } from "@/src/pages/NotFoundPage";
+
+export function ProjectPosterPage() {
+  const { slug = "" } = useParams<{ slug: string }>();
+  const project = getProjectBySlug(slug);
+  const document = project ? getProjectDocument(project, "poster") : undefined;
+
+  useDocumentTitle(
+    project && document
+      ? `${project.title} — ${document.label} | Noora Bumjaid`
+      : "Not Found"
+  );
+
+  if (!project || !document) return <NotFoundPage />;
+
+  return (
+    <PageTransition>
+      <div className="pt-28 pb-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <FadeIn onMount>
+            <ProjectSubpageHeader
+              projectSlug={slug}
+              projectTitle={project.title}
+              pageTitle={document.label}
+              description="Cybersecurity senior project exhibition poster."
+            >
+              <Button href={document.url} download variant="secondary" size="sm">
+                Download PDF
+              </Button>
+            </ProjectSubpageHeader>
+          </FadeIn>
+
+          <FadeIn onMount className="mt-10">
+            <GlassCard className="overflow-hidden">
+              <div className="relative aspect-[3/4] w-full bg-cyber-surface md:aspect-[4/5]">
+                <iframe
+                  src={`${withBasePath(document.url)}#toolbar=0`}
+                  title={document.label}
+                  className="absolute inset-0 h-full w-full"
+                />
+              </div>
+            </GlassCard>
+          </FadeIn>
+        </div>
+      </div>
+    </PageTransition>
+  );
+}

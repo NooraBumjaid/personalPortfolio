@@ -1,0 +1,1161 @@
+{
+  "site": {
+    "name": "Noora Abdulrahman Bumjaid",
+    "title": "IT and Cybersecurity",
+    "subtitle": "University of Bahrain · Expected Graduation: August 2026",
+    "shortName": "Noora Bumjaid",
+    "description": "Final-year IT and Cybersecurity student at the University of Bahrain with practical experience from the Ministry of Interior internship and academic projects in secure software engineering, risk management, and web development.",
+    "profile": "Final-year IT and Cybersecurity student at the University of Bahrain passionate about secure software development, cybersecurity, risk management, and technology innovation. Skilled in Python, web technologies, database management, and security-focused system design with a strong commitment to continuous learning and team collaboration.",
+    "heroBio": "Final-year IT and Cybersecurity student passionate about secure software development, cybersecurity, risk management, and technology innovation.",
+    "aboutLead": "I combine academic coursework with hands-on projects and professional internship experience, focused on building secure, practical solutions in cybersecurity and software engineering.",
+    "aboutHighlights": [
+      "IT & cybersecurity",
+      "Secure software engineering",
+      "Risk management & threat modeling",
+      "Web development & database systems",
+      "Continuous learning & team collaboration"
+    ],
+    "url": "https://noorabumjaid.vercel.app",
+    "ogImage": "/og-image.svg",
+    "email": "noorabumjaid04@gmail.com",
+    "phone": "+973 32000072",
+    "linkedin": "https://www.linkedin.com/in/noorabumjaid",
+    "github": "https://github.com/NooraBumjaid",
+    "location": "Bahrain",
+    "resumePath": "/resume.pdf",
+    "openForWork": true,
+    "openForWorkLabel": "Open for Work",
+    "openForWorkDescription": "Seeking internships, IT and cybersecurity roles, and collaborative opportunities. Graduating August 2026.",
+    "openForWorkTypes": [
+      "Internships",
+      "Full-time roles",
+      "Remote & on-site"
+    ]
+  },
+  "heroStats": [
+    {
+      "value": "10+",
+      "label": "Academic Projects"
+    },
+    {
+      "value": "8+",
+      "label": "Certifications"
+    },
+    {
+      "value": "1",
+      "label": "Internship"
+    },
+    {
+      "value": "3",
+      "label": "Awards"
+    }
+  ],
+  "navLinks": [
+    {
+      "href": "#home",
+      "label": "Home"
+    },
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#skills",
+      "label": "Skills"
+    },
+    {
+      "href": "#experience",
+      "label": "Experience"
+    },
+    {
+      "href": "#projects",
+      "label": "Projects"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#activities",
+      "label": "Activities"
+    },
+    {
+      "href": "#awards",
+      "label": "Awards"
+    },
+    {
+      "href": "/resume",
+      "label": "Resume"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Cybersecurity",
+      "institution": "University of Bahrain",
+      "period": "Sep 2022 – August 2026",
+      "description": "Graduation expected August 2026. Coursework includes secure software development, network fundamentals, web application development, security principles, risk assessment, and information security fundamentals."
+    },
+    {
+      "degree": "High School Diploma",
+      "institution": "Creativity Private School",
+      "period": "Jun 2022",
+      "description": "Completed secondary education before pursuing a degree in cybersecurity."
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "IELTS 6.5"
+    }
+  ],
+  "skillCategories": {
+    "cybersecurity": {
+      "label": "Cybersecurity",
+      "skills": [
+        "Wireshark",
+        "Risk Assessment",
+        "Security Analysis",
+        "STRIDE",
+        "SQUARE"
+      ]
+    },
+    "programming": {
+      "label": "Programming",
+      "skills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++",
+        "Database Management"
+      ]
+    },
+    "webDevelopment": {
+      "label": "Web Development",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Flask"
+      ]
+    },
+    "tools": {
+      "label": "Tools",
+      "skills": [
+        "GitHub",
+        "Figma",
+        "Microsoft Office"
+      ]
+    }
+  },
+  "certifications": [
+    {
+      "name": "Solidity for Beginners: Write and Test Smart Contracts",
+      "issuer": "Coursera",
+      "year": "Mar 2026",
+      "shortName": "Solidity for Beginners"
+    },
+    {
+      "name": "Secure Software Development",
+      "issuer": "Coursera",
+      "year": "Oct 2025",
+      "shortName": "Secure Software Development"
+    },
+    {
+      "name": "Strategic Software Testing",
+      "issuer": "Coursera",
+      "year": "Oct 2025",
+      "shortName": "Strategic Software Testing"
+    },
+    {
+      "name": "Introduction to Cybersecurity Essentials",
+      "issuer": "IBM / Coursera",
+      "year": "Jul 2025",
+      "shortName": "IBM Cybersecurity Essentials"
+    },
+    {
+      "name": "Exploring Reconnaissance: OSINT Essentials Workshop",
+      "issuer": "Bahrain Polytechnic",
+      "year": "Aug 2024",
+      "shortName": "OSINT Essentials Workshop"
+    },
+    {
+      "name": "Get Started with Wrike",
+      "issuer": "Coursera Project Network",
+      "year": "Mar 2024",
+      "shortName": "Wrike — Get Started"
+    },
+    {
+      "name": "Project Management: How to Create a Gantt Chart in Wrike",
+      "issuer": "Coursera Project Network",
+      "year": "Mar 2024",
+      "shortName": "Wrike — Gantt Charts"
+    },
+    {
+      "name": "Cybersecurity Safety Online Awareness Course",
+      "issuer": "Arab International Cybersecurity Conference & Exhibition",
+      "year": "Dec 2023",
+      "shortName": "Cybersecurity Awareness"
+    }
+  ],
+  "experience": [
+    {
+      "role": "IT Intern",
+      "organization": "Ministry of Interior",
+      "period": "Jun 2026 – Aug 2026",
+      "description": "Supported IT and operational workflows within the Ministry of Interior, contributing to asset management, database maintenance, documentation, and reporting in a structured government environment. Worked closely with staff to keep technology records accurate, improve internal data quality, and support reliable day-to-day IT operations.",
+      "highlights": [
+        "Verified IT asset inventories and updated records to maintain accurate tracking of equipment and resources.",
+        "Maintained and updated internal databases, ensuring data consistency for reporting and operational use.",
+        "Organized technical and administrative documentation to support team workflows and internal reference.",
+        "Prepared reports using Microsoft Excel and Microsoft Access to summarize asset status, updates, and operational activity.",
+        "Assisted with routine IT support tasks while following government procedures for data handling, confidentiality, and accountability."
+      ],
+      "responsibilities": [
+        "Asset Inventory Verification",
+        "IT Asset Tracking",
+        "Database Updates",
+        "Data Validation",
+        "Documentation Management",
+        "Operational Reporting",
+        "Microsoft Access",
+        "Microsoft Excel",
+        "IT Support",
+        "Record Keeping"
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "role": "Startup Bahrain Participant",
+      "organization": "Startup Bahrain — University of Bahrain",
+      "period": "May 2026",
+      "description": "Participated in Startup Bahrain, engaging in entrepreneurship, innovation, and startup ecosystem activities through the University of Bahrain.",
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/startup-bahrain-certificate.pdf"
+        }
+      ]
+    },
+    {
+      "role": "AI GameDay — AWS Challenge Participant",
+      "organization": "Royal Police Academy Partnership",
+      "period": "Nov 2025",
+      "description": "Participated in The AWS competition held in partnership with the Royal Police Academy.",
+      "featured": true,
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/ai-gameday-certificate.pdf"
+        }
+      ]
+    },
+    {
+      "role": "Workshop Organizer",
+      "organization": "Arab International Cybersecurity Conference & Exhibition (AICS)",
+      "period": "Nov 2025",
+      "description": "Organized the University of Bahrain workshop at the Arab International Cybersecurity Conference and Exhibition.",
+      "featured": true
+    },
+    {
+      "role": "IT Volunteer",
+      "organization": "3rd Asian Youth Games 2025 — Bahrain",
+      "period": "Oct 2025",
+      "description": "Volunteered in the IT department supporting event technology operations.",
+      "featured": true,
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/asian-youth-games-certificate.pdf"
+        }
+      ]
+    },
+    {
+      "role": "Program Participant",
+      "organization": "The Transformative Power of AI in Entrepreneurship — Youth City Program",
+      "period": "Aug 2025",
+      "description": "Participated in a youth program exploring artificial intelligence applications in entrepreneurship.",
+      "featured": true
+    },
+    {
+      "role": "Young Parliamentarian Program Participant",
+      "organization": "Youth Pioneer Society",
+      "period": "Feb 2023 – Oct 2023",
+      "description": "Completed the 6th edition of the Young Parliamentary Program, engaging in leadership development, policy discussions, and civic participation under the patronage of the Shura Council.",
+      "featured": true,
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/young-parliamentarian/certificate.png"
+        },
+        {
+          "label": "Ceremony",
+          "url": "/awards/young-parliamentarian/ceremony.png"
+        },
+        {
+          "label": "Group Photo",
+          "url": "/awards/young-parliamentarian/group-photo.png"
+        }
+      ]
+    },
+    {
+      "role": "Keys 2030 Program Participant",
+      "organization": "National Youth Program",
+      "period": "Aug 2022",
+      "description": "Participated in Bahrain's Keys 2030 youth development initiative."
+    },
+    {
+      "role": "Tatawwar Program Participant",
+      "organization": "Social Innovation Program",
+      "period": "Jan 2022 – Feb 2022",
+      "description": "Participated in the Tatawwar social innovation and entrepreneurship program, developing Hear Me Sign — an MVP mobile app concept for sign language translation and learning.",
+      "documents": [
+        {
+          "label": "Report",
+          "url": "/awards/tatawwar-report.pdf"
+        },
+        {
+          "label": "MVP",
+          "url": "/awards/tatawwar-mvp.png"
+        },
+        {
+          "label": "Certificate",
+          "url": "/awards/tatawwar-certificate.pdf"
+        }
+      ]
+    },
+    {
+      "role": "SDG Innovation & Entrepreneurship Awards Participant",
+      "organization": "Secondary Schools SDG Program",
+      "period": "Nov 2020 – Apr 2021",
+      "description": "Certificate of participation in the Secondary Schools SDG for Innovation and Entrepreneurship Awards, organized by UNIDO ITPO and the Arab International Center for Entrepreneurship & Investment, Bahrain.",
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/sdg-innovation-certificate.png"
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Second Place — Batelco Digital BootCamp",
+      "description": "Awarded second place in a digital skills development program focused on technology, innovation, and problem-solving.",
+      "icon": "trophy",
+      "documents": [
+        {
+          "label": "Tourist Package",
+          "url": "/awards/batelco-digital-bootcamp-tourist-package.pdf"
+        },
+        {
+          "label": "Certificate",
+          "url": "/awards/batelco-digital-bootcamp-certificate.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Judges Award — VEX Robotics Bahrain Competition",
+      "description": "Recognized at the 4th Bahrain VEX Robotics Championship 2018 for creativity, teamwork, and problem-solving.",
+      "icon": "medal",
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/vex-robotics-certificate.png"
+        }
+      ]
+    },
+    {
+      "title": "First Prize — Latifa bint Mohammed Rashid AlMaktoum Award for Childhood Creativity",
+      "description": "Awarded first place in the Hadith Scholars category for a research report on the life and contributions of Imam Al-Bukhari (2015/2016).",
+      "icon": "star",
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/awards/latifa-award-certificate.png"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "thaghrah",
+      "title": "Thaghrah – Packet Analysis Learning Platform",
+      "overview": "A University of Bahrain senior project (ITCY 499) building a web-based cybersecurity learning platform that helps beginners develop practical packet-analysis and Wireshark investigation skills through 40 structured PCAP challenges, AI-generated scenarios, and gamified progression.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "SQLite",
+        "Scapy",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Jinja2",
+        "Wireshark",
+        "Grok API",
+        "Werkzeug"
+      ],
+      "features": [
+        "40 guided packet-analysis challenges across 8 protocol categories",
+        "Sequential challenge unlocking with progress tracking",
+        "AI Lab for dynamic investigation scenarios from natural-language prompts",
+        "Downloadable PCAP files for Wireshark-based analysis",
+        "Automated flag validation with hint-aware scoring penalties",
+        "Gamification with points, badges, and milestone rewards",
+        "Protocol guides, cheat sheets, and learner dashboard",
+        "Secure authentication, XSS protection, and locked-challenge access control"
+      ],
+      "contributions": [
+        "Co-developed the full-stack platform as part of the senior project team",
+        "Built backend functionality using Flask, SQLite, and Werkzeug authentication",
+        "Generated and processed PCAP files using Scapy for fixed and AI-based challenges",
+        "Contributed to frontend development with HTML, CSS, JavaScript, and Jinja2 templates",
+        "Helped design learning workflows, challenge progression, and gamification features",
+        "Supported AI Lab integration, flag validation logic, and platform testing",
+        "Participated in documentation, evaluation, and deployment preparation"
+      ],
+      "outcome": "Evaluation confirmed successful operation in an educational environment. The platform supported challenge progression, flag validation, PCAP workflows, security protections, and AI-generated challenges — effectively delivering practical packet-analysis learning through guided cybersecurity investigation.",
+      "category": "Senior Project",
+      "featured": true,
+      "order": 1,
+      "period": "Sep 2025 – May 2026",
+      "liveUrl": "https://thaghrah.site",
+      "githubUrl": "https://github.com/manar005/Senior-Project",
+      "course": "ITCY 499 — Senior Project, University of Bahrain",
+      "supervisor": "Dr. Abdulla Khalifa Aldoseri",
+      "team": [
+        {
+          "name": "Noora Abdulrahman Bumjaid",
+          "id": "202203245"
+        },
+        {
+          "name": "Manar Hussain Abdulrahim",
+          "id": "202201554"
+        }
+      ],
+      "objectives": [
+        "Help beginner cybersecurity learners develop practical packet-analysis skills",
+        "Bridge the gap between theoretical networking knowledge and hands-on investigation",
+        "Provide realistic PCAP-based challenges through protocol-focused exercises",
+        "Encourage critical thinking with hint-aware scoring that reduces points when hints are used",
+        "Support learner progression through structured sequencing, tracking, and gamified rewards",
+        "Integrate AI-generated investigation scenarios to increase challenge diversity"
+      ],
+      "futureWork": [
+        "Expand challenge coverage to broader cybersecurity domains",
+        "Improve quality and consistency of AI-generated scenarios",
+        "Introduce team-based competition features such as leaderboards",
+        "Add real-time packet capture and live traffic analysis"
+      ],
+      "videos": [
+        {
+          "label": "3-Minute Pitch (English)",
+          "url": "https://youtu.be/-2Q9Dz09QXQ"
+        },
+        {
+          "label": "3-Minute Pitch (Arabic)",
+          "url": "https://youtu.be/ieTxpoozDi4"
+        },
+        {
+          "label": "Platform Demo",
+          "url": "https://youtu.be/C9HqBI3txdY"
+        }
+      ],
+      "documents": [
+        {
+          "slug": "slides",
+          "label": "Project Slides",
+          "url": "/projects/thaghrah-slides.pdf"
+        },
+        {
+          "slug": "poster",
+          "label": "Senior Project Poster",
+          "url": "/projects/thaghrah-poster.pdf"
+        }
+      ],
+      "image": "/projects/thumbnails/thaghrah.jpg",
+      "cardDescription": "Interactive cybersecurity learning platform focused on packet analysis and PCAP investigation with AI-generated scenarios and gamification features.",
+      "problem": "Beginner cybersecurity students understand networking theory but struggle to apply it inside real packet captures without guided, hands-on practice.",
+      "solution": "A Flask-based platform combining structured PCAP challenges, protocol guides, AI-generated scenarios, and gamified progression for Wireshark-based investigation.",
+      "challenges": [
+        "Integrating AI-generated PCAP workflows with consistent flag validation",
+        "Designing sequential unlocking that balances difficulty and learner motivation",
+        "Building secure authentication and access control for educational environments"
+      ],
+      "lessonsLearned": [
+        "Hands-on packet analysis requires structured progression and realistic traffic scenarios",
+        "Security controls must be embedded early in educational platform design",
+        "AI can increase challenge diversity when paired with strong validation logic"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Problem Statement\n\nBeginner cybersecurity students often understand networking theory in lectures but struggle when applying it inside real packet captures. A single PCAP file can contain overlapping protocol behavior, filtering requirements, and suspicious traffic patterns that feel overwhelming without guided practice. Many educational environments also provide limited hands-on packet-analysis experience, and fixed exercises become predictable once learners memorize investigation patterns.\n\n## Solution\n\nThaghrah is a Flask-based learning platform that combines structured progression, downloadable PCAP investigations, protocol guides, and an AI Lab that generates dynamic scenarios from natural-language prompts. Learners analyze traffic locally in Wireshark, submit flags, earn points and badges, and unlock challenges sequentially as they build confidence.\n\n## Protocol Categories\n\nThe fixed curriculum includes **40 challenges** distributed across **8 protocol families**, with **5 challenges per category**:\n\n- HTTP\n- TCP\n- DNS\n- FTP\n- ICMP\n- SMTP\n- TLS\n- Network Forensics\n\n## System Architecture\n\nThe platform uses a Flask application layer for authentication, routing, challenge management, and the AI Lab. Core logic handles session management, sequential unlocking, and flag validation. Persistent data — including user progress, badges, and AI challenge metadata — is stored in SQLite. The AI Lab integrates with external LLM providers (Grok API) and uses Scapy to generate downloadable PCAP files for investigation.\n\n![System Architecture](/projects/thaghrah-architecture.png)\n\n## Key Results\n\nEvaluation findings from functional, security, performance, and AI-accuracy testing showed that:\n\n- PCAP downloads, flag validation, hint penalties, and badge awarding all passed testing\n- Security controls including password hashing, XSS handling, and locked-challenge protection worked as intended\n- AI-generated scenarios increased training diversity while maintaining realistic investigation workflows\n- Structured progression and gamification improved learner engagement in a controlled educational environment\n\n## Comparison with Related Platforms\n\nCompared with platforms like OverTheWire and TryHackMe, Thaghrah focuses specifically on **Wireshark-based forensic analysis** and protocol-diverse traffic investigation rather than general security wargames or web exploitation environments.\n"
+    },
+    {
+      "slug": "enterprise-risk-assessment",
+      "title": "Enterprise Risk Assessment & Compliance Framework",
+      "overview": "A comprehensive security risk assessment (ITCY460) for simulated FinTech organization Meridian FinTech Solutions, covering threat identification, risk prioritization, and compliance-oriented recommendations.",
+      "technologies": [
+        "Risk Assessment",
+        "Risk Analysis",
+        "Security Governance",
+        "Compliance Management",
+        "Security Planning"
+      ],
+      "features": [
+        "Organizational asset and threat analysis",
+        "Vulnerability and risk prioritization",
+        "Risk likelihood and impact evaluation",
+        "Structured mitigation strategies",
+        "Compliance-oriented recommendations",
+        "Risk register and impact analysis deliverables"
+      ],
+      "contributions": [
+        "Conducted a comprehensive security risk assessment for Meridian FinTech Solutions",
+        "Identified potential security threats, vulnerabilities, and business risks",
+        "Evaluated risk likelihood and impact to prioritize security concerns",
+        "Developed structured mitigation strategies and security recommendations",
+        "Produced compliance-oriented recommendations aligned with enterprise security practices"
+      ],
+      "outcome": "Developed a structured framework that helps organizations prioritize and reduce cybersecurity risks with actionable compliance guidance.",
+      "category": "Risk & Compliance",
+      "featured": true,
+      "order": 2,
+      "period": "Apr 2026 – May 2026",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITCY460 — Enterprise Risk Management, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "presentation",
+          "label": "Project Presentation",
+          "url": "/projects/enterprise-risk-presentation.pdf",
+          "group": "presentation"
+        },
+        {
+          "slug": "rmp",
+          "label": "Risk Management Plan (RMP)",
+          "url": "/projects/enterprise-risk-rmp.pdf",
+          "group": "reports"
+        },
+        {
+          "slug": "part5",
+          "label": "Risk Mitigation Plan",
+          "url": "/projects/enterprise-risk-part5.pdf",
+          "group": "reports"
+        },
+        {
+          "slug": "part6",
+          "label": "Risk Assessment Plan",
+          "url": "/projects/enterprise-risk-part6.pdf",
+          "group": "reports"
+        }
+      ],
+      "image": "/projects/thumbnails/enterprise-risk-assessment.jpg",
+      "cardDescription": "Risk assessment and compliance framework developed for a FinTech case study focusing on threat identification, mitigation, and business risk evaluation.",
+      "problem": "FinTech organizations face evolving cyber threats, regulatory expectations, and business risks that require structured assessment.",
+      "solution": "A comprehensive risk assessment framework identifying threats, evaluating likelihood and impact, and proposing mitigation and compliance recommendations.",
+      "challenges": [
+        "Prioritizing risks with limited organizational context",
+        "Aligning technical findings with business and compliance priorities"
+      ],
+      "lessonsLearned": [
+        "Risk registers are most useful when tied to actionable mitigation plans",
+        "Compliance recommendations must reflect realistic enterprise constraints"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Case Study\n\nMeridian FinTech Solutions — ITCY460, University of Bahrain\n\n## Deliverables\n\n- Risk Management Plan (RMP)\n- Risk Mitigation Plan\n- Risk Assessment Plan\n- Project presentation covering assessment methodology and outcomes\n\n## Methodology\n\nThe assessment followed a structured enterprise risk management approach: identifying organizational assets, analyzing threats and vulnerabilities, evaluating likelihood and impact, prioritizing risks, and producing compliance-oriented mitigation recommendations for a simulated FinTech environment.\n"
+    },
+    {
+      "slug": "trust-pension-dapp",
+      "title": "TrustPension DApp",
+      "overview": "TrustPension is a blockchain-enabled pension management platform that addresses transparency and trust challenges in Bahrain's pension system. The solution introduces a permissioned DApp where employers, contributors, SIO officers, auditors, and administrators interact through role-based workflows while maintaining immutable and auditable records using blockchain technology.",
+      "technologies": [
+        "Blockchain",
+        "Smart Contracts",
+        "Figma",
+        "DApp Architecture",
+        "Permissioned Blockchain",
+        "System Analysis & Design"
+      ],
+      "features": [
+        "Role-based dashboards for contributors, employers, SIO officers, and auditors",
+        "Smart contract automation for contribution verification",
+        "Immutable transaction records with blockchain TX references",
+        "Contribution tracking and submission workflows",
+        "Correction request workflow with review status",
+        "Audit logging and transparent record history",
+        "Permissioned blockchain access control",
+        "Real-time status monitoring and notifications"
+      ],
+      "contributions": [
+        "Conducted problem analysis of Bahrain's pension system",
+        "Designed the TrustPension DApp concept and business workflow",
+        "Defined system actors, permissions, and blockchain-based processes",
+        "Created system architecture and technical framework",
+        "Designed user interfaces and workflows using Figma",
+        "Proposed smart contract automation for contribution verification and audit tracking"
+      ],
+      "outcome": "Delivered a comprehensive DApp concept and Figma prototype demonstrating how permissioned blockchain technology can improve transparency, integrity, and auditability of pension contribution records in Bahrain.",
+      "category": "Blockchain / FinTech / DApp Development",
+      "featured": true,
+      "order": 3,
+      "period": "Apr 2026 – May 2026",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "Blockchain Technology and Applications — University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": [
+        {
+          "label": "Project Presentation",
+          "url": "https://youtu.be/5ovDxXzc-zI"
+        }
+      ],
+      "documents": [
+        {
+          "slug": "presentation",
+          "label": "Project Presentation",
+          "url": "/projects/trust-pension-presentation.pdf",
+          "group": "presentation"
+        }
+      ],
+      "image": "/projects/thumbnails/trust-pension-dapp.jpg",
+      "cardDescription": "Blockchain-based DApp for transparent, auditable pension contribution management in Bahrain through smart contracts and role-based workflows.",
+      "problem": "Current pension systems rely on centralized management, making contribution records less transparent and difficult to independently verify. Contributors have limited visibility into updates and correction processes, reducing trust and increasing audit complexity.",
+      "solution": "Developed a permissioned blockchain-based DApp that enables transparent record tracking, immutable transaction history, role-based access control, correction workflows, and auditable contribution management through smart contracts.",
+      "challenges": [
+        "Mapping complex pension workflows to permissioned blockchain roles",
+        "Designing intuitive dashboards for four distinct user types",
+        "Balancing transparency with privacy in a public-sector financial system"
+      ],
+      "lessonsLearned": [
+        "Blockchain adds the most value when auditability and trust are core requirements",
+        "Role-based DApp design requires clear actor permissions from the start",
+        "UI/UX must simplify blockchain complexity for non-technical users"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": [
+        {
+          "label": "Contributor View",
+          "url": "/projects/trust-pension/contributor-view.png"
+        },
+        {
+          "label": "Employer View",
+          "url": "/projects/trust-pension/employer-view.png"
+        },
+        {
+          "label": "SIO Officer View",
+          "url": "/projects/trust-pension/sio-officer-view.png"
+        },
+        {
+          "label": "Auditor View",
+          "url": "/projects/trust-pension/auditor-view.png"
+        }
+      ],
+      "content": "\n## System Actors\n\nTrustPension supports four primary roles, each with dedicated dashboards and workflows:\n\n- **Contributor** — View pension contributions, track approval status, submit correction requests, and monitor contribution history with blockchain transaction references.\n- **Employer** — Submit monthly contribution data, upload supporting documents, and track submission approval status.\n- **SIO Officer** — Review pending submissions, manage correction requests, and approve or reject contribution records.\n- **Auditor** — Access audit trails, verify transaction activity, and monitor system-wide contribution logs for compliance.\n\n## Architecture\n\nThe platform uses a permissioned blockchain architecture where contribution records are stored as immutable transactions. Smart contracts automate verification steps, while role-based access ensures each actor interacts only with authorized data and workflows.\n\n![TrustPension System Architecture](/projects/trust-pension/system-architecture.png)\n\n## Design Highlights\n\nFigma prototypes cover the full user journey across all four roles — from secure login with Bahrain eKey integration to dashboards, contribution history, correction requests, notifications, and profile settings.\n"
+    },
+    {
+      "slug": "tesla-it-audit-plan",
+      "title": "Tesla IT Audit Plan & Audit Program",
+      "overview": "Developed a comprehensive IT audit plan and audit program for Tesla, focusing on risk assessment, IT governance, cybersecurity, business continuity, and control evaluation. The project applied industry-standard frameworks to identify critical technology risks and design audit procedures for high-priority systems.",
+      "technologies": [
+        "IT Auditing",
+        "Risk Assessment",
+        "COBIT 2019",
+        "ISO/IEC 27001",
+        "NIST Cybersecurity Framework",
+        "Business Continuity Planning",
+        "IT Governance",
+        "Control Testing",
+        "Risk Analysis"
+      ],
+      "features": [
+        "Vehicle Software & FOTA Management audit scope",
+        "Autopilot / AI Systems risk evaluation",
+        "Manufacturing & Supply Chain Systems assessment",
+        "Global Network & Cloud Security review",
+        "Data Privacy & Protection Compliance",
+        "Identity & Access Management (IAM) controls",
+        "Customer Digital Platforms evaluation",
+        "IT Governance assessment",
+        "Incident Response & Business Continuity planning"
+      ],
+      "contributions": [
+        "Participated in developing Tesla's IT audit universe and identifying critical technology domains for assessment",
+        "Contributed to conducting risk assessments and prioritizing audit areas based on likelihood and business impact",
+        "Assisted in designing annual audit plans, audit schedules, and audit programs",
+        "Contributed to evaluating cybersecurity, software security, cloud infrastructure, AI systems, and business continuity risks",
+        "Assisted in developing audit procedures, evidence collection methods, and test-of-controls activities",
+        "Participated in preparing audit documentation, findings, recommendations, and risk mitigation strategies"
+      ],
+      "outcome": "Delivered a structured IT audit plan and audit program for Tesla that identifies critical technology risks, defines audit procedures, and supports improved security, compliance, and business continuity across high-priority systems.",
+      "category": "Cybersecurity / IT Auditing / Risk Management",
+      "featured": false,
+      "order": 4,
+      "period": "Sep 2025 – Nov 2025",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITCY470 — IT Auditing & Business Continuity, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "audit-plan",
+          "label": "IT Audit Plan",
+          "url": "/projects/tesla-audit-plan.pdf",
+          "group": "reports",
+          "format": "report"
+        },
+        {
+          "slug": "audit-program",
+          "label": "Audit Program",
+          "url": "/projects/tesla-audit-program.pdf",
+          "group": "reports",
+          "format": "ppt"
+        }
+      ],
+      "image": "/projects/thumbnails/tesla-it-audit-plan.jpg",
+      "cardDescription": "IT audit plan and audit program for Tesla covering risk assessment, IT governance, cybersecurity, and business continuity using COBIT, ISO 27001, and NIST.",
+      "problem": "Tesla operates a highly complex technology environment that includes vehicle software, AI systems, manufacturing platforms, cloud infrastructure, customer applications, and global operations. Failures in these systems could impact safety, operations, regulatory compliance, and business continuity.",
+      "solution": "Designed a risk-based IT audit strategy that evaluated critical systems, prioritized high-risk areas, defined audit procedures, and established control-testing approaches to improve security, reliability, compliance, and operational resilience.",
+      "challenges": [
+        "Prioritizing audit areas across a diverse and complex global technology environment",
+        "Aligning multiple frameworks (COBIT, ISO 27001, NIST) to a single cohesive audit program",
+        "Assessing emerging risks in AI systems and connected vehicle software"
+      ],
+      "lessonsLearned": [
+        "Risk-based auditing requires balancing business impact with control effectiveness",
+        "Framework alignment improves audit consistency and stakeholder confidence",
+        "High-risk technology domains must be re-evaluated as systems and threats evolve"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Goal\n\nAssess Tesla's technology environment, identify high-risk IT areas, evaluate existing controls, and develop a structured audit plan and audit program that aligns with industry best practices and organizational objectives.\n\n## Frameworks Applied\n\nThe audit approach leveraged established standards and frameworks:\n\n- **COBIT 2019** — IT governance and control objectives\n- **ISO/IEC 27001** — Information security management\n- **NIST Cybersecurity Framework** — Identify, protect, detect, respond, and recover\n\n## Audit Universe\n\nCritical technology domains assessed included vehicle software and FOTA management, Autopilot/AI systems, manufacturing and supply chain platforms, global network and cloud security, data privacy compliance, IAM, customer digital platforms, IT governance, and incident response with business continuity planning.\n\n## Deliverables\n\nThe project produced an annual audit plan, prioritized audit schedule, detailed audit program with test-of-controls procedures, evidence collection methods, and risk-based recommendations for high-priority technology areas.\n"
+    },
+    {
+      "slug": "secure-focus",
+      "title": "Secure Focus – Secure Productivity Platform",
+      "overview": "A secure software engineering course project (ITCY354) designing a productivity and collaboration platform with project management, messaging, and file sharing using SQUARE and STRIDE methodologies.",
+      "technologies": [
+        "Figma",
+        "SQUARE Framework",
+        "STRIDE Threat Modeling",
+        "Security Requirements Engineering",
+        "System Design"
+      ],
+      "features": [
+        "Project management and team messaging",
+        "Secure file sharing concepts",
+        "SQUARE-based security requirements",
+        "STRIDE threat modeling analysis",
+        "Figma interface prototypes",
+        "Secure-by-design system workflows"
+      ],
+      "contributions": [
+        "Collaborated in the design of a secure productivity and collaboration platform",
+        "Applied the SQUARE methodology to identify and define security requirements",
+        "Utilized the STRIDE threat modeling framework to analyze potential threats and risks",
+        "Developed security-focused system designs, use cases, and mitigation strategies",
+        "Created interface prototypes and system designs using Figma with secure-by-design principles"
+      ],
+      "outcome": "Produced a comprehensive secure system design capable of mitigating common security threats while supporting team collaboration.",
+      "category": "Secure Design",
+      "featured": true,
+      "order": 5,
+      "period": "Oct 2025 – Dec 2025",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITCY354 — Secure Software Engineering, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "report",
+          "label": "SSE Project Report",
+          "url": "/projects/secure-focus-report.pdf"
+        },
+        {
+          "slug": "presentation",
+          "label": "Project Presentation",
+          "url": "/projects/secure-focus-presentation.pdf"
+        }
+      ],
+      "image": "/projects/thumbnails/secure-focus.jpg",
+      "cardDescription": "Secure productivity platform designed using security requirements engineering and threat modeling methodologies.",
+      "problem": "Collaboration platforms often add features quickly without systematically defining security requirements or analyzing threats.",
+      "solution": "A secure productivity platform designed with SQUARE for requirements engineering and STRIDE for threat modeling, supported by Figma prototypes.",
+      "challenges": [
+        "Translating threat models into practical mitigation strategies",
+        "Balancing usability with secure-by-design workflows"
+      ],
+      "lessonsLearned": [
+        "Security requirements should be defined before implementation decisions",
+        "STRIDE helps teams anticipate threats across collaboration features"
+      ],
+      "prototypeUrl": "https://clever-cake-97784513.figma.site",
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Course\n\nITCY354 — Secure Software Engineering, University of Bahrain\n\n## Objective\n\nDesign a collaboration system integrating project management, communication, and file sharing while maintaining strong security controls throughout the development lifecycle.\n\n## Security Methodologies\n\n- **SQUARE** — Security Quality Requirements Engineering for defining security requirements\n- **STRIDE** — Threat modeling framework for analyzing spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege\n- **Secure-by-design** — Security controls embedded from early system design through prototype delivery\n\n## Deliverables\n\n- Full SSE project report with requirements, threat analysis, and system design\n- Presentation deck covering project scope, security approach, and outcomes\n- Interactive Figma prototype demonstrating platform workflows and interface design\n"
+    },
+    {
+      "slug": "news-retrieval-system",
+      "title": "News Retrieval Client-Server System",
+      "overview": "An ITNE352 client-server application in Python that retrieves and displays news sources and headlines from the News API using TCP sockets, multithreading, and JSON data handling.",
+      "technologies": [
+        "Python",
+        "TCP Sockets",
+        "JSON",
+        "Threading",
+        "News API",
+        "Object-Oriented Programming"
+      ],
+      "features": [
+        "TCP socket client-server communication",
+        "Multithreaded concurrent client connections",
+        "News API integration",
+        "JSON data retrieval and processing",
+        "User-defined search criteria",
+        "Object-oriented client-side architecture"
+      ],
+      "contributions": [
+        "Developed a client-server application in Python to retrieve and display news from the News API",
+        "Implemented TCP socket communication for data exchange between clients and the server",
+        "Utilized multithreading to support concurrent client connections and request processing",
+        "Integrated external APIs and JSON data handling for user-defined search criteria",
+        "Applied object-oriented programming principles to structure client-side functionality"
+      ],
+      "outcome": "Built a functional networked application demonstrating socket programming, concurrent processing, and external API integration.",
+      "category": "Network Programming",
+      "featured": false,
+      "order": 6,
+      "period": "Nov 2024 – Jan 2025",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/manar005/ITNE352-PROJECT-GROUPB5",
+      "course": null,
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": null,
+      "image": "/projects/thumbnails/news-retrieval-system.jpg",
+      "cardDescription": "Client-server application retrieving news headlines through socket communication and API integration.",
+      "problem": "Building reliable networked applications requires handling concurrent clients and external API data correctly.",
+      "solution": "A Python client-server system using TCP sockets, multithreading, and JSON processing to retrieve and present news based on user criteria.",
+      "challenges": [
+        "Managing concurrent client connections without blocking the server",
+        "Parsing and presenting API responses consistently across clients"
+      ],
+      "lessonsLearned": [
+        "Socket programming reinforces how client-server communication works under the hood",
+        "Multithreading is essential for responsive networked applications"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Course\n\nITNE352 — University of Bahrain\n\n## Objective\n\nDevelop a networked client-server system capable of retrieving, processing, and presenting news information based on user search criteria.\n"
+    },
+    {
+      "slug": "telemedicine-platform-pmp",
+      "title": "Telemedicine Platform Project Management Plan",
+      "overview": "Developed a comprehensive project management plan for a telemedicine platform aimed at improving healthcare accessibility through remote consultations, online appointment scheduling, electronic medical record integration, and secure video conferencing. The project focused on project planning, stakeholder management, risk assessment, budgeting, scheduling, and governance.",
+      "technologies": [
+        "Project Management",
+        "Work Breakdown Structure (WBS)",
+        "Gantt Charts",
+        "Stakeholder Analysis",
+        "Risk Management",
+        "Cost Estimation",
+        "Communication Planning",
+        "Project Charter Development"
+      ],
+      "features": [
+        "Remote patient-doctor consultations",
+        "Online appointment scheduling",
+        "Electronic medical record integration",
+        "Secure video conferencing",
+        "Patient reminders and engagement features",
+        "Risk management framework",
+        "Stakeholder management plan",
+        "Budget and cost planning",
+        "Project scheduling and milestone tracking",
+        "Governance and communication planning"
+      ],
+      "contributions": [
+        "Contributed to developing the project charter and project planning documentation",
+        "Participated in stakeholder analysis and stakeholder management activities",
+        "Assisted in creating the Work Breakdown Structure (WBS) and project schedules",
+        "Contributed to risk identification, assessment, and mitigation planning",
+        "Participated in project scope definition, milestone planning, and deliverable management",
+        "Assisted in developing communication and governance plans",
+        "Collaborated with team members throughout the planning, documentation, and project management phases"
+      ],
+      "outcome": "Delivered a complete project management plan for a telemedicine platform, including charter, organization structure, stakeholder register, schedules, and governance documentation to support remote healthcare delivery.",
+      "category": "Project Management / Healthcare Technology",
+      "featured": false,
+      "order": 7,
+      "period": "Apr 2024 – May 2024",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITIS266 — Project Management, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "charter",
+          "label": "Project Charter",
+          "url": "/projects/telemedicine-project-charter.pdf",
+          "group": "reports"
+        }
+      ],
+      "image": "/projects/thumbnails/telemedicine-platform-pmp.jpg",
+      "cardDescription": "Project management plan for a telemedicine platform covering remote consultations, scheduling, EMR integration, and secure video conferencing.",
+      "problem": "Many patients face transportation barriers, long travel distances, and extended waiting times for appointments. Traditional healthcare services often require in-person visits for scheduling and consultations, limiting accessibility and convenience.",
+      "solution": "Planned a telemedicine platform that would provide remote consultations, appointment scheduling, electronic medical record integration, secure video conferencing, and patient engagement features to improve healthcare accessibility and operational efficiency.",
+      "challenges": [
+        "Coordinating stakeholder expectations across healthcare and technical domains",
+        "Estimating costs and timelines for a multi-feature healthcare platform",
+        "Identifying and prioritizing risks in a regulated healthcare context"
+      ],
+      "lessonsLearned": [
+        "Strong stakeholder analysis is critical before defining project scope",
+        "WBS and Gantt charts improve clarity for complex multi-phase projects",
+        "Risk and communication plans must be defined early in healthcare initiatives"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Goal\n\nPlan and manage the development of a telemedicine platform that enables patients to consult doctors remotely, schedule appointments online, access specialists more easily, and reduce transportation barriers while improving healthcare accessibility and patient satisfaction.\n\n## Project Management Deliverables\n\nThe planning phase produced core project management artifacts:\n\n- **Project Charter** — Scope, objectives, and high-level requirements\n- **Project Organization** — Roles, responsibilities, and team structure\n- **Stakeholder Register** — Stakeholder analysis and engagement approach\n- **WBS & Scheduling** — Work breakdown and milestone-based timelines\n- **Risk Management** — Risk identification, assessment, and mitigation strategies\n- **Communication & Governance** — Reporting structure and decision-making framework\n\n## Platform Vision\n\nThe proposed telemedicine platform would integrate remote consultations, online scheduling, EMR access, secure video conferencing, and patient engagement tools to improve healthcare accessibility and reduce barriers to care.\n"
+    },
+    {
+      "slug": "smart-vault",
+      "title": "SmartVault – QR-Based Secure Delivery Locker",
+      "overview": "An ITIS322 smart systems project designing a QR-based secure delivery locker with controlled access workflows for customers, couriers, and administrators.",
+      "technologies": [
+        "IoT",
+        "Access Control",
+        "Authentication",
+        "Smart Systems Design",
+        "QR Code Authentication",
+        "Figma"
+      ],
+      "features": [
+        "QR-code authentication for package collection",
+        "Secure parcel storage workflows",
+        "Customer, courier, and admin user journeys",
+        "Access control and authentication concepts",
+        "IoT and digital innovation integration"
+      ],
+      "contributions": [
+        "Collaborated in the design of a smart QR-based locker system for secure parcel delivery",
+        "Developed secure workflows and user journeys for customers, couriers, and administrators",
+        "Applied authentication and access control concepts to enhance system security",
+        "Incorporated IoT and digital innovation principles to improve usability and automation"
+      ],
+      "outcome": "Created a secure and scalable smart-delivery concept that improves delivery efficiency, access control, and user experience.",
+      "category": "IoT Security",
+      "featured": false,
+      "order": 8,
+      "period": "Apr 2025 – May 2025",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITIS322 — Smart Systems Design, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "report",
+          "label": "Project Report",
+          "url": "/projects/smart-vault-report.pdf"
+        },
+        {
+          "slug": "presentation",
+          "label": "Project Presentation",
+          "url": "/projects/smart-vault-presentation.pdf"
+        }
+      ],
+      "image": "/projects/thumbnails/smart-vault.jpg",
+      "cardDescription": "QR-based secure parcel locker system focusing on access control, secure workflows, and digital innovation.",
+      "problem": "Traditional package delivery systems often suffer from missed deliveries and unauthorized access.",
+      "solution": "A smart locker platform providing secure package delivery through QR-based authentication and automated access workflows.",
+      "challenges": [
+        "Designing secure workflows for multiple user roles",
+        "Balancing IoT convenience with authentication requirements"
+      ],
+      "lessonsLearned": [
+        "Access control design is central to secure smart-system concepts",
+        "User journeys must be mapped before defining security controls"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": "https://www.figma.com/design/WnpdT2IkRY21nVKmHL8Ehr/is322?node-id=38-218",
+      "gallery": null,
+      "content": "\n## Course\n\nITIS322 — University of Bahrain\n\n## Problem\n\nTraditional package delivery systems often suffer from missed deliveries and unauthorized access.\n\n## Solution\n\nA smart locker platform providing secure package delivery through QR-based authentication and automated access workflows. The system supports secure workflows for customers, couriers, and administrators with IoT-enabled access control.\n\n## Deliverables\n\n- Full project report documenting system design and security approach\n- Presentation deck covering SmartVault concept and implementation\n- Figma design file with interface and workflow prototypes\n"
+    },
+    {
+      "slug": "travel-agency-database",
+      "title": "Travel Agency Database Management System",
+      "overview": "Designed and implemented a relational database system for a travel agency to manage customers, bookings, travel packages, flights, hotels, branches, employees, and optional car rental services. The project focused on database design principles, normalization, ER/EER modeling, and SQL implementation.",
+      "technologies": [
+        "SQL",
+        "Oracle SQL",
+        "ER Modeling",
+        "EER Modeling",
+        "Database Design",
+        "Database Normalization"
+      ],
+      "features": [
+        "Customer management",
+        "Travel package management",
+        "Flight reservation tracking",
+        "Hotel management",
+        "Branch and employee management",
+        "Car rental services",
+        "ER & EER modeling",
+        "Connection trap analysis",
+        "Database normalization (1NF, 2NF, 3NF)",
+        "SQL schema implementation"
+      ],
+      "contributions": [
+        "Designed database entities and relationships for the travel agency system",
+        "Developed ER and EER diagrams representing business requirements and system structure",
+        "Performed database normalization up to Third Normal Form (3NF)",
+        "Identified and resolved connection traps within database relationships",
+        "Created relational database schemas and implemented SQL table structures",
+        "Defined primary keys, foreign keys, and integrity constraints",
+        "Wrote SQL scripts for database creation and sample data population"
+      ],
+      "outcome": "Delivered a comprehensive normalized database design and SQL implementation that supports efficient management of travel agency operations including bookings, packages, flights, hotels, branches, and car rental services.",
+      "category": "Database Systems / SQL Development",
+      "featured": false,
+      "order": 9,
+      "period": "Dec 2023",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": "ITIS213 — Database Systems, University of Bahrain",
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": [
+        {
+          "slug": "report",
+          "label": "Project Report",
+          "url": "/projects/travel-agency-report.pdf",
+          "group": "reports"
+        },
+        {
+          "slug": "group-report",
+          "label": "Group Report (Sec 4)",
+          "url": "/projects/travel-agency-group-report.pdf",
+          "group": "reports"
+        }
+      ],
+      "image": "/projects/thumbnails/travel-agency-database.jpg",
+      "cardDescription": "Relational database system for a travel agency covering bookings, packages, flights, hotels, branches, and car rentals with ER/EER modeling and SQL implementation.",
+      "problem": "Travel agencies manage large amounts of interconnected data involving customers, bookings, travel packages, hotels, flights, branches, and transportation services. Without a structured database, maintaining accurate records and handling reservations efficiently becomes difficult.",
+      "solution": "Developed a normalized relational database that organizes all travel agency operations into structured entities with well-defined relationships, ensuring data consistency, integrity, and efficient management of travel services.",
+      "challenges": [
+        "Modeling complex travel agency relationships without redundancy",
+        "Identifying and resolving connection traps in ER/EER diagrams",
+        "Applying normalization while preserving business query requirements"
+      ],
+      "lessonsLearned": [
+        "Strong ER/EER modeling reduces errors before SQL implementation",
+        "Normalization improves data integrity but requires careful relationship design",
+        "Connection trap analysis is essential for accurate multi-entity databases"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Goal\n\nCreate a comprehensive database management system for a travel agency that could efficiently manage travel packages, bookings, customers, flights, hotels, employees, branches, and transportation services while reducing errors and improving operational efficiency.\n\n## Database Design Approach\n\nThe project followed a structured database development lifecycle:\n\n1. **Requirements analysis** — Identified entities for customers, bookings, packages, flights, hotels, branches, employees, and car rentals.\n2. **ER/EER modeling** — Mapped business rules and relationships, including specialization where needed.\n3. **Normalization** — Applied 1NF, 2NF, and 3NF to eliminate redundancy and dependency issues.\n4. **Connection trap analysis** — Reviewed relationships to prevent incorrect query results.\n5. **SQL implementation** — Created schemas with primary keys, foreign keys, constraints, and sample data scripts.\n\n## System Scope\n\nThe database supports core travel agency operations including customer records, package and booking management, flight and hotel reservations, branch and employee administration, and optional car rental services.\n"
+    },
+    {
+      "slug": "course-hub",
+      "title": "Course Hub – Academic Collaboration Platform",
+      "overview": "A university-focused web platform (ITCS333) that enables students to manage and access course information through remote database integration and collaborative development workflows.",
+      "technologies": [
+        "Replit",
+        "SQL",
+        "Database Management",
+        "GitHub",
+        "Backend Development",
+        "Remote Database Integration"
+      ],
+      "features": [
+        "Course management and resource organization",
+        "Remote database connectivity",
+        "Web-based course information access",
+        "Team-based design and development",
+        "Application hosting on Replit"
+      ],
+      "contributions": [
+        "Developed a web-based course management platform for managing and accessing course information",
+        "Utilized Replit as the application hosting environment and backend server",
+        "Implemented remote database connectivity for storing and retrieving course data",
+        "Collaborated with team members throughout design, development, and testing phases"
+      ],
+      "outcome": "Created a reliable academic platform that simplifies access to course-related information through a database-driven web system.",
+      "category": "Web Development",
+      "featured": false,
+      "order": 10,
+      "period": "Mar 2025 – May 2025",
+      "liveUrl": null,
+      "githubUrl": "https://github.com/NooraBumjaid/Group2-CS333/tree/Noora",
+      "course": null,
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": null,
+      "image": "/projects/thumbnails/course-hub.jpg",
+      "cardDescription": "Academic collaboration platform for managing university course resources and information.",
+      "problem": "Students often struggle to organize course materials and collaborate efficiently across different subjects.",
+      "solution": "A centralized web platform that stores course information and allows users to manage and retrieve academic resources through remote database integration.",
+      "challenges": [
+        "Connecting a hosted frontend to a remote database reliably",
+        "Coordinating team-based development across design and testing phases"
+      ],
+      "lessonsLearned": [
+        "Database-driven web apps require careful planning of data structure and access patterns",
+        "Team collaboration improves when roles and workflows are defined early"
+      ],
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Course\n\nITCS333 — University of Bahrain\n\n## Problem\n\nStudents often struggle to organize course materials and collaborate efficiently across different subjects.\n\n## Solution\n\nA centralized web platform that stores course information and allows users to manage and retrieve academic resources through remote database integration.\n"
+    }
+  ]
+}
