@@ -2,18 +2,19 @@
   "site": {
     "name": "Noora Abdulrahman Bumjaid",
     "title": "IT and Cybersecurity",
-    "subtitle": "University of Bahrain · Expected Graduation: August 2026",
+    "subtitle": "University of Bahrain · IT and Cybersecurity Graduate",
     "shortName": "Noora Bumjaid",
-    "description": "Final-year IT and Cybersecurity student at the University of Bahrain with practical experience from the Ministry of Interior internship and academic projects in secure software engineering, risk management, and web development.",
-    "profile": "Final-year IT and Cybersecurity student at the University of Bahrain passionate about secure software development, cybersecurity, risk management, and technology innovation. Skilled in Python, web technologies, database management, and security-focused system design with a strong commitment to continuous learning and team collaboration.",
-    "heroBio": "Final-year IT and Cybersecurity student passionate about secure software development, cybersecurity, risk management, and technology innovation.",
-    "aboutLead": "I combine academic coursework with hands-on projects and professional internship experience, focused on building secure, practical solutions in cybersecurity and software engineering.",
+    "description": "IT and Cybersecurity graduate from the University of Bahrain with Ministry of Interior internship experience and projects across software development, AI, networking, databases, and web technologies.",
+    "profile": "Technology has always inspired me to explore how innovative ideas can become practical solutions. As an IT and Cybersecurity graduate from the University of Bahrain, I enjoy designing and developing systems that combine functionality, security, and usability — backed by my Ministry of Interior internship and hands-on project work across cybersecurity, secure software development, artificial intelligence, networking, databases, blockchain, and web technologies. Through academic and real-world projects, I have built secure applications, analyzed system requirements, designed databases, and applied security frameworks to practical challenges, strengthening my technical foundation while reinforcing the importance of collaboration, continuous learning, and attention to detail. Collaborative and adaptable by nature, I am passionate about expanding my knowledge, embracing new challenges, and contributing to meaningful projects where I can keep growing as a technology professional and help deliver solutions that create real impact.",
+    "heroBio": "IT and Cybersecurity graduate from the University of Bahrain with hands-on project experience across software development, AI, networking, databases, and web technologies. Passionate about turning innovative ideas into practical, secure, and user-friendly solutions.",
+    "aboutLead": "An IT and Cybersecurity graduate inspired by technology, continuous learning, and building solutions that create real value.",
     "aboutHighlights": [
-      "IT & cybersecurity",
-      "Secure software engineering",
-      "Risk management & threat modeling",
-      "Web development & database systems",
-      "Continuous learning & team collaboration"
+      "IT & software development",
+      "Cybersecurity & secure systems",
+      "AI, networking & databases",
+      "Web technologies",
+      "Continuous learning & growth mindset",
+      "Collaborative team contributor"
     ],
     "url": "https://noorabumjaid.vercel.app",
     "ogImage": "/og-image.svg",
@@ -25,7 +26,7 @@
     "resumePath": "/resume.pdf",
     "openForWork": true,
     "openForWorkLabel": "Open for Work",
-    "openForWorkDescription": "Seeking internships, IT and cybersecurity roles, and collaborative opportunities. Graduating August 2026.",
+    "openForWorkDescription": "Seeking IT and cybersecurity roles, internships, and opportunities to learn, grow, and contribute.",
     "openForWorkTypes": [
       "Internships",
       "Full-time roles",
@@ -38,7 +39,7 @@
       "label": "Academic Projects"
     },
     {
-      "value": "8+",
+      "value": "13+",
       "label": "Certifications"
     },
     {
@@ -159,49 +160,92 @@
       "name": "Solidity for Beginners: Write and Test Smart Contracts",
       "issuer": "Coursera",
       "year": "Mar 2026",
-      "shortName": "Solidity for Beginners"
+      "shortName": "Solidity for Beginners",
+      "document": "/certifications/solidity-for-beginners.pdf"
     },
     {
       "name": "Secure Software Development",
-      "issuer": "Coursera",
-      "year": "Oct 2025",
-      "shortName": "Secure Software Development"
+      "issuer": "Coursera / Packt",
+      "year": "Nov 2025",
+      "shortName": "Secure Software Development",
+      "document": "/certifications/secure-software-development.pdf"
     },
     {
       "name": "Strategic Software Testing",
-      "issuer": "Coursera",
-      "year": "Oct 2025",
-      "shortName": "Strategic Software Testing"
+      "issuer": "Coursera / Pearson",
+      "year": "Nov 2025",
+      "shortName": "Strategic Software Testing",
+      "document": "/certifications/strategic-software-testing.pdf"
+    },
+    {
+      "name": "IBM Cybersecurity Fundamentals Specialization",
+      "issuer": "IBM / Coursera",
+      "year": "Jul 2025",
+      "shortName": "IBM Cybersecurity Fundamentals",
+      "document": "/certifications/ibm-cybersecurity-fundamentals-specialization.pdf"
+    },
+    {
+      "name": "Encryption and Cryptography Essentials",
+      "issuer": "IBM / Coursera",
+      "year": "Jul 2025",
+      "shortName": "Encryption & Cryptography Essentials",
+      "document": "/certifications/encryption-cryptography-essentials.pdf"
+    },
+    {
+      "name": "Introduction to Cybersecurity Careers",
+      "issuer": "IBM / Coursera",
+      "year": "Jul 2025",
+      "shortName": "Cybersecurity Careers",
+      "document": "/certifications/introduction-cybersecurity-careers.pdf"
     },
     {
       "name": "Introduction to Cybersecurity Essentials",
       "issuer": "IBM / Coursera",
       "year": "Jul 2025",
-      "shortName": "IBM Cybersecurity Essentials"
+      "shortName": "Cybersecurity Essentials",
+      "document": "/certifications/introduction-cybersecurity-essentials.pdf"
+    },
+    {
+      "name": "Cybersecurity: Protecting your Information at Home",
+      "issuer": "Kennesaw State University / Coursera",
+      "year": "Jul 2025",
+      "shortName": "Protecting Information at Home",
+      "document": "/certifications/cybersecurity-protecting-information-at-home.pdf"
     },
     {
       "name": "Exploring Reconnaissance: OSINT Essentials Workshop",
       "issuer": "Bahrain Polytechnic",
       "year": "Aug 2024",
-      "shortName": "OSINT Essentials Workshop"
+      "shortName": "OSINT Essentials Workshop",
+      "document": "/certifications/osint-essentials-workshop.pdf"
     },
     {
       "name": "Get Started with Wrike",
       "issuer": "Coursera Project Network",
       "year": "Mar 2024",
-      "shortName": "Wrike — Get Started"
+      "shortName": "Wrike — Get Started",
+      "document": "/certifications/wrike-get-started.pdf"
     },
     {
       "name": "Project Management: How to Create a Gantt Chart in Wrike",
       "issuer": "Coursera Project Network",
       "year": "Mar 2024",
-      "shortName": "Wrike — Gantt Charts"
+      "shortName": "Wrike — Gantt Charts",
+      "document": "/certifications/wrike-gantt-chart.pdf"
     },
     {
-      "name": "Cybersecurity Safety Online Awareness Course",
-      "issuer": "Arab International Cybersecurity Conference & Exhibition",
+      "name": "Cyber Security Safety Online Awareness Course",
+      "issuer": "Arab International Cybersecurity Conference & Exhibition / Cyber World Record",
       "year": "Dec 2023",
-      "shortName": "Cybersecurity Awareness"
+      "shortName": "Cybersecurity Awareness Course",
+      "document": "/certifications/cybersecurity-safety-awareness-course.pdf"
+    },
+    {
+      "name": "Cyber Safety Online Awareness Training Course",
+      "issuer": "Cyber World Record",
+      "year": "Dec 2023",
+      "shortName": "Cyber Safety Awareness Training",
+      "document": "/certifications/cyber-safety-awareness-training-course.pdf"
     }
   ],
   "experience": [
@@ -309,7 +353,29 @@
       "role": "Keys 2030 Program Participant",
       "organization": "National Youth Program",
       "period": "Aug 2022",
-      "description": "Participated in Bahrain's Keys 2030 youth development initiative."
+      "description": "Participated in Bahrain's Keys 2030 youth development initiative, contributing to the Simsar Al-Khair project through teamwork, presentation, and program deliverables.",
+      "documents": [
+        {
+          "label": "Simsar Al-Khair",
+          "url": "/awards/keys-2030/simsar-al-khair.pdf"
+        },
+        {
+          "label": "Program Report",
+          "url": "/awards/keys-2030/program-report.pdf"
+        },
+        {
+          "label": "Stage Presentation",
+          "url": "/awards/keys-2030/stage-presentation.png"
+        },
+        {
+          "label": "Group Photo",
+          "url": "/awards/keys-2030/group-photo.png"
+        },
+        {
+          "label": "Program Photo",
+          "url": "/awards/keys-2030/keys-program-photo.png"
+        }
+      ]
     },
     {
       "role": "Tatawwar Program Participant",

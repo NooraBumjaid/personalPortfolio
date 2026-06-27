@@ -21,7 +21,7 @@ export function ActivitiesTimeline() {
                 <p className="mt-1 text-sm text-cyber-cyan">{item.organization}</p>
                 <p className="mt-3 text-sm leading-relaxed text-cyber-muted">{item.description}</p>
                 {item.documents && item.documents.length > 0 ? (
-                  <DocumentLinksGrid documents={item.documents} className="mt-4" />
+                  <DocumentLinksGrid documents={item.documents} className="mt-2" />
                 ) : null}
               </GlassCard>
             </div>

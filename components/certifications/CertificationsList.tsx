@@ -1,4 +1,5 @@
 import { GlassCard } from "@/components/ui/GlassCard";
+import { DocumentLink } from "@/components/ui/DocumentLink";
 import { MotionStagger, MotionItem } from "@/components/motion/Motion";
 import { certifications } from "@/lib/site-config";
 
@@ -25,7 +26,14 @@ export function CertificationsList() {
               {cert.shortName ?? cert.name}
             </h3>
             <p className="mt-2 text-sm text-cyber-cyan">{cert.issuer}</p>
-            <p className="mt-auto pt-4 font-mono text-xs text-cyber-muted">{cert.year}</p>
+            <p className="mt-2 font-mono text-xs text-cyber-muted">{cert.year}</p>
+            {"document" in cert && cert.document ? (
+              <div className="mt-auto px-3 pb-2 pt-4">
+                <div className="flex justify-center">
+                  <DocumentLink label="View Certificate" url={cert.document} />
+                </div>
+              </div>
+            ) : null}
           </GlassCard>
         </MotionItem>
       ))}

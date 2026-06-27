@@ -80,6 +80,24 @@ export function ProjectDetailPage() {
           </FadeIn>
 
           <div className="mt-12 space-y-8">
+            {project.technologies.length ? (
+              <FadeIn onMount>
+                <GlassCard className="p-6 md:p-8">
+                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Technologies</h2>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-lg bg-white/5 px-3 py-1.5 font-mono text-sm text-cyber-muted"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </GlassCard>
+              </FadeIn>
+            ) : null}
+
             {(project.course || project.supervisor || project.team?.length) ? (
               <FadeIn onMount>
                 <ProjectMeta
@@ -128,24 +146,6 @@ export function ProjectDetailPage() {
             {project.features.length ? (
               <FadeIn onMount>
                 <ListSection title="Features" items={project.features} />
-              </FadeIn>
-            ) : null}
-
-            {project.technologies.length ? (
-              <FadeIn onMount>
-                <GlassCard className="p-6 md:p-8">
-                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Technologies</h2>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-lg bg-white/5 px-3 py-1.5 font-mono text-sm text-cyber-muted"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </GlassCard>
               </FadeIn>
             ) : null}
 

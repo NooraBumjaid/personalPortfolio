@@ -58,7 +58,7 @@ export function AwardsSection() {
                   {award.description}
                 </p>
                 {award.documents && award.documents.length > 0 ? (
-                  <DocumentLinksGrid documents={award.documents} className="mt-4" />
+                  <DocumentLinksGrid documents={award.documents} className="mt-auto" />
                 ) : null}
               </GlassCard>
             </MotionItem>
