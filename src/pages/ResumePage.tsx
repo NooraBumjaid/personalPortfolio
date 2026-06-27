@@ -18,7 +18,7 @@ export function ResumePage() {
               Curriculum <span className="cyber-gradient-text">Vitae</span>
             </h1>
             <p className="section-subheading mx-auto mt-4">
-              View my full resume below. Use the download button if you need a PDF copy.
+              Scroll through the full CV below. You can also download a PDF copy.
             </p>
             <div className="mt-8 flex justify-center">
               <Button href="/" variant="secondary" size="md">

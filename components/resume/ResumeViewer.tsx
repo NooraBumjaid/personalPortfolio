@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { PdfScrollViewer } from "@/components/resume/PdfScrollViewer";
 import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/paths";
 import { cn } from "@/lib/utils";
@@ -37,18 +38,14 @@ export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
         </Button>
       </div>
 
-      <div
+      <PdfScrollViewer
+        src={resumePath}
+        title={`${siteConfig.name} Resume`}
         className={cn(
-          "relative w-full bg-cyber-surface",
+          "bg-cyber-surface",
           tall ? "min-h-[75vh] md:min-h-[80vh]" : "min-h-[28rem] md:min-h-[32rem]"
         )}
-      >
-        <iframe
-          src={`${resumePath}#toolbar=0&navpanes=0`}
-          title={`${siteConfig.name} Resume`}
-          className="absolute inset-0 h-full w-full border-0"
-        />
-      </div>
+      />
     </GlassCard>
   );
 }
