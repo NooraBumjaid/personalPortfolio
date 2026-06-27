@@ -88,7 +88,7 @@ export function Navbar() {
       <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="nav-bar mt-4 flex items-center justify-between rounded-2xl border border-cyber-border px-4 py-3 sm:px-6">
           <Link href="/" className="group flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-cyber-accent/10 font-mono text-sm font-bold text-cyber-accent">
+            <span className="font-mono text-sm font-bold text-cyber-accent">
               NB
             </span>
             <span className="hidden font-semibold text-cyber-text sm:block">
