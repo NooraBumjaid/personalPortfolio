@@ -3,6 +3,7 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { PdfScrollViewer } from "@/components/resume/PdfScrollViewer";
 import { useLocale } from "@/lib/i18n";
 import { withBasePath } from "@/lib/paths";
+import { RESUME_PDF_FILENAME, RESUME_PDF_PATH } from "@/lib/resume";
 import { cn } from "@/lib/utils";
 
 interface ResumeViewerProps {
@@ -11,8 +12,8 @@ interface ResumeViewerProps {
 }
 
 export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
-  const { site, ui } = useLocale();
-  const resumePath = withBasePath(site.resumePath);
+  const { ui } = useLocale();
+  const resumePath = withBasePath(RESUME_PDF_PATH);
 
   return (
     <GlassCard className={cn("overflow-hidden", className)}>
@@ -23,9 +24,9 @@ export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
             <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
             <span className="h-3 w-3 rounded-full bg-green-500/80" />
           </div>
-          <span className="font-mono text-xs text-cyber-muted">Noora_Bumjaid_CV.pdf</span>
+          <span className="font-mono text-xs text-cyber-muted">{RESUME_PDF_FILENAME}</span>
         </div>
-        <Button href={site.resumePath} download variant="secondary" size="sm">
+        <Button href={RESUME_PDF_PATH} download variant="secondary" size="sm">
           {ui.downloadCv}
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -40,7 +41,7 @@ export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
 
       <PdfScrollViewer
         src={resumePath}
-        title={`${site.name} Resume`}
+        title="Noora Bumjaid Resume"
         className={cn(
           "bg-cyber-surface",
           tall ? "min-h-[75vh] md:min-h-[80vh]" : "min-h-[28rem] md:min-h-[32rem]"
