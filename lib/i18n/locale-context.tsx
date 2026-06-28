@@ -13,8 +13,6 @@ import { getUi, type UiStrings } from "@/lib/i18n/ui";
 import type { Locale } from "@/lib/i18n/types";
 import type { Project, ProjectDocument } from "@/lib/projects-types";
 
-const STORAGE_KEY = "portfolio-locale";
-
 type PortfolioData = typeof portfolioEn;
 
 const portfolios: Record<Locale, PortfolioData> = {
@@ -56,14 +54,8 @@ interface LocaleContextValue {
 
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
-function readStoredLocale(): Locale {
-  if (typeof window === "undefined") return "en";
-  const stored = window.localStorage.getItem(STORAGE_KEY);
-  return stored === "ar" ? "ar" : "en";
-}
-
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>(readStoredLocale);
+  const [locale, setLocaleState] = useState<Locale>("en");
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);
@@ -74,7 +66,6 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, locale);
     document.documentElement.lang = locale;
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
   }, [locale]);
