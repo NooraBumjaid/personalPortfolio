@@ -2,6 +2,8 @@ import { Link } from "@/lib/router";
 import { ReactNode } from "react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Project, ProjectDocument } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
+import type { UiStrings } from "@/lib/i18n/ui";
 
 interface ProjectMediaButtonsProps {
   project: Project;
@@ -24,104 +26,15 @@ const presentationIcon = (
   </svg>
 );
 
-function getDocumentDescription(format?: ProjectDocument["format"]) {
-  if (format === "report") return "Report";
-  if (format === "ppt") return "PPT";
-  if (format === "pdf") return "PDF report";
-  return "PDF report";
+function getDocumentDescription(ui: UiStrings, format?: ProjectDocument["format"]) {
+  if (format === "report") return ui.docReport;
+  if (format === "ppt") return ui.docPpt;
+  return ui.docPdf;
 }
 
 function getDocumentIcon(format?: ProjectDocument["format"]) {
   return format === "ppt" ? presentationIcon : documentIcon;
 }
-
-const mediaItems = [
-  {
-    key: "videos",
-    label: "Watch Videos",
-    description: "Pitch presentations and platform demo",
-    href: (slug: string) => `/projects/${slug}/videos`,
-    show: (p: Project) => p.videos?.some((v) => v.url.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-      </svg>
-    ),
-  },
-  {
-    key: "slides",
-    label: "View Slides",
-    description: "Project presentation deck",
-    href: (slug: string) => `/projects/${slug}/slides`,
-    show: (p: Project) =>
-      p.documents?.some((d) => d.slug === "slides" && d.url.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    key: "poster",
-    label: "View Poster",
-    description: "Project exhibition poster",
-    href: (slug: string) => `/projects/${slug}/poster`,
-    show: (p: Project) =>
-      p.documents?.some((d) => d.slug === "poster" && d.url.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    key: "report",
-    label: "View Report",
-    description: "Full project report and analysis",
-    href: (slug: string) => `/projects/${slug}/document/report`,
-    show: (p: Project) =>
-      p.documents?.some((d) => d.slug === "report" && d.url.trim()),
-    icon: documentIcon,
-  },
-  {
-    key: "presentation",
-    label: "View Presentation",
-    description: "Slides and project overview",
-    href: (slug: string) => `/projects/${slug}/document/presentation`,
-    show: (p: Project) =>
-      p.documents?.some((d) => d.slug === "presentation" && d.url.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4V2m10 2V2M7 20h10a2 2 0 002-2V8a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM7 8h10" />
-      </svg>
-    ),
-  },
-  {
-    key: "figma",
-    label: "View Figma Design",
-    description: "System design and interface prototypes",
-    href: (slug: string, project: Project) => project.figmaUrl ?? `#`,
-    external: true,
-    show: (p: Project) => Boolean(p.figmaUrl?.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
-      </svg>
-    ),
-  },
-  {
-    key: "prototype",
-    label: "View Prototype",
-    description: "Interactive Figma design preview",
-    href: (slug: string) => `/projects/${slug}/prototype`,
-    show: (p: Project) => Boolean(p.prototypeUrl?.trim()),
-    icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-] as const;
 
 function MediaButton({
   href,
@@ -147,9 +60,7 @@ function MediaButton({
       <h3 className="text-center font-semibold text-cyber-text transition-colors group-hover:text-cyber-accent">
         {label}
       </h3>
-      <p className="mt-1 text-center text-xs leading-relaxed text-cyber-muted">
-        {description}
-      </p>
+      <p className="mt-1 text-center text-xs leading-relaxed text-cyber-muted">{description}</p>
     </>
   );
 
@@ -168,18 +79,102 @@ function MediaButton({
   );
 }
 
+const mediaItems = (ui: UiStrings) =>
+  [
+    {
+      key: "videos",
+      label: ui.watchVideos,
+      description: ui.watchVideosDesc,
+      href: (slug: string) => `/projects/${slug}/videos`,
+      show: (p: Project) => p.videos?.some((v) => v.url.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+        </svg>
+      ),
+    },
+    {
+      key: "slides",
+      label: ui.viewSlides,
+      description: ui.viewSlidesDesc,
+      href: (slug: string) => `/projects/${slug}/slides`,
+      show: (p: Project) => p.documents?.some((d) => d.slug === "slides" && d.url.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      ),
+    },
+    {
+      key: "poster",
+      label: ui.viewPoster,
+      description: ui.viewPosterDesc,
+      href: (slug: string) => `/projects/${slug}/poster`,
+      show: (p: Project) => p.documents?.some((d) => d.slug === "poster" && d.url.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      ),
+    },
+    {
+      key: "report",
+      label: ui.viewReport,
+      description: ui.viewReportDesc,
+      href: (slug: string) => `/projects/${slug}/document/report`,
+      show: (p: Project) => p.documents?.some((d) => d.slug === "report" && d.url.trim()),
+      icon: documentIcon,
+    },
+    {
+      key: "presentation",
+      label: ui.viewPresentation,
+      description: ui.viewPresentationDesc,
+      href: (slug: string) => `/projects/${slug}/document/presentation`,
+      show: (p: Project) => p.documents?.some((d) => d.slug === "presentation" && d.url.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 4V2m10 2V2M7 20h10a2 2 0 002-2V8a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM7 8h10" />
+        </svg>
+      ),
+    },
+    {
+      key: "figma",
+      label: ui.viewFigmaDesign,
+      description: ui.viewFigmaDesignDesc,
+      href: (_slug: string, p: Project) => p.figmaUrl ?? "#",
+      external: true,
+      show: (p: Project) => Boolean(p.figmaUrl?.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+        </svg>
+      ),
+    },
+    {
+      key: "prototype",
+      label: ui.viewPrototype,
+      description: ui.viewPrototypeDescInteractive,
+      href: (slug: string) => `/projects/${slug}/prototype`,
+      show: (p: Project) => Boolean(p.prototypeUrl?.trim()),
+      icon: (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+    },
+  ] as const;
+
 export function ProjectMediaButtons({ project }: ProjectMediaButtonsProps) {
-  const staticItems = mediaItems.filter((item) => item.show(project));
+  const { ui } = useLocale();
+  const items = mediaItems(ui);
+  const staticItems = items.filter((item) => item.show(project));
   const gridItems = staticItems.filter((item) => item.key !== "figma");
   const figmaItem = staticItems.find((item) => item.key === "figma");
   const videoCount = project.videos?.filter((video) => video.url.trim()).length ?? 0;
   const reportItems =
     project.documents?.filter(
       (doc) =>
-        doc.group === "reports" &&
-        doc.slug &&
-        doc.url.trim() &&
-        doc.slug !== "report"
+        doc.group === "reports" && doc.slug && doc.url.trim() && doc.slug !== "report"
     ) ?? [];
 
   if (gridItems.length === 0 && reportItems.length === 0 && !figmaItem) return null;
@@ -187,11 +182,9 @@ export function ProjectMediaButtons({ project }: ProjectMediaButtonsProps) {
   return (
     <GlassCard className="p-6 md:p-8">
       <h2 className="mb-2 font-mono text-sm uppercase tracking-wider text-cyber-accent">
-        Project Media
+        {ui.projectMedia}
       </h2>
-      <p className="mb-6 text-sm text-cyber-muted">
-        Explore reports, presentations, prototypes, and demo materials for this project.
-      </p>
+      <p className="mb-6 text-sm text-cyber-muted">{ui.projectMediaDescription}</p>
       <div className="flex flex-wrap justify-center gap-4">
         {gridItems.map((item) => (
           <div key={item.key} className="w-full sm:w-[calc(50%-0.5rem)]">
@@ -200,15 +193,13 @@ export function ProjectMediaButtons({ project }: ProjectMediaButtonsProps) {
               label={
                 item.key === "videos"
                   ? videoCount === 1
-                    ? "Watch Video"
-                    : "Watch Videos"
+                    ? ui.watchVideoSingular
+                    : ui.watchVideos
                   : item.label
               }
               description={
-                item.key === "videos"
-                  ? videoCount === 1
-                    ? "Project presentation recording"
-                    : item.description
+                item.key === "videos" && videoCount === 1
+                  ? ui.watchVideoSingularDesc
                   : item.description
               }
               icon={item.icon}
@@ -221,14 +212,14 @@ export function ProjectMediaButtons({ project }: ProjectMediaButtonsProps) {
             <MediaButton
               href={`/projects/${project.slug}/document/${doc.slug}`}
               label={doc.label}
-              description={doc.description ?? getDocumentDescription(doc.format)}
+              description={doc.description ?? getDocumentDescription(ui, doc.format)}
               icon={getDocumentIcon(doc.format)}
             />
           </div>
         ))}
       </div>
 
-      {figmaItem && (
+      {figmaItem ? (
         <div className="mt-4 flex justify-center">
           <div className="w-full sm:w-[calc(50%-0.5rem)]">
             <MediaButton
@@ -240,7 +231,7 @@ export function ProjectMediaButtons({ project }: ProjectMediaButtonsProps) {
             />
           </div>
         </div>
-      )}
+      ) : null}
     </GlassCard>
   );
 }

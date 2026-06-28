@@ -2,7 +2,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { DocumentLinksGrid } from "@/components/ui/DocumentLink";
 import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Motion";
-import { awards } from "@/lib/site-config";
+import { useLocale } from "@/lib/i18n";
 
 const awardIcons = {
   trophy: (
@@ -32,15 +32,17 @@ const awardIcons = {
 };
 
 export function AwardsSection() {
+  const { awards, ui } = useLocale();
+
   return (
     <section id="awards" className="section-padding scroll-mt-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <MotionSection>
           <SectionHeader
-            label="Awards"
-            title="Achievements"
-            highlight="& recognition"
-            description="Competitive awards and recognitions across technology, robotics, and academic excellence."
+            label={ui.awardsLabel}
+            title={ui.awardsTitle}
+            highlight={ui.awardsHighlight}
+            description={ui.awardsDescription}
           />
         </MotionSection>
 

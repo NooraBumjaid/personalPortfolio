@@ -2,16 +2,17 @@ import { useParams } from "@/lib/router";
 import { FadeIn, PageTransition } from "@/components/motion/FadeIn";
 import { ProjectSubpageHeader } from "@/components/projects/ProjectSubpageHeader";
 import { ProjectVideos } from "@/components/projects/ProjectVideos";
-import { getProjectBySlug } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 import { useDocumentTitle } from "@/lib/use-document-title";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
 export function ProjectVideosPage() {
   const { slug = "" } = useParams<{ slug: string }>();
+  const { getProjectBySlug, ui } = useLocale();
   const project = getProjectBySlug(slug);
 
   useDocumentTitle(
-    project ? `${project.title} — Videos | Noora Bumjaid` : "Not Found"
+    project ? `${project.title} — ${ui.videos} | ${ui.documentTitleSuffix}` : ui.documentTitleNotFound
   );
 
   if (!project?.videos?.some((v) => v.url.trim())) {
@@ -26,8 +27,8 @@ export function ProjectVideosPage() {
             <ProjectSubpageHeader
               projectSlug={slug}
               projectTitle={project.title}
-              pageTitle="Project Videos"
-              description="Pitch presentations and platform demonstration."
+              pageTitle={ui.projectVideos}
+              description={ui.watchVideosDesc}
             />
           </FadeIn>
 

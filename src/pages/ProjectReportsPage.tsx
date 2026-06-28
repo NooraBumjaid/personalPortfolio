@@ -2,7 +2,8 @@ import { Link, useParams } from "@/lib/router";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { FadeIn, PageTransition } from "@/components/motion/FadeIn";
 import { ProjectSubpageHeader } from "@/components/projects/ProjectSubpageHeader";
-import { getProjectBySlug, ProjectDocument } from "@/lib/projects";
+import { ProjectDocument } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 import { useDocumentTitle } from "@/lib/use-document-title";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
@@ -12,13 +13,14 @@ function getReportDocuments(documents?: ProjectDocument[]) {
 
 export function ProjectReportsPage() {
   const { slug = "" } = useParams<{ slug: string }>();
+  const { getProjectBySlug, ui } = useLocale();
   const project = getProjectBySlug(slug);
   const reports = getReportDocuments(project?.documents ?? undefined);
 
   useDocumentTitle(
     project && reports.length
-      ? `${project.title} — Reports | Noora Bumjaid`
-      : "Not Found"
+      ? `${project.title} — ${ui.projectReports} | ${ui.documentTitleSuffix}`
+      : ui.documentTitleNotFound
   );
 
   if (!project || reports.length === 0) return <NotFoundPage />;
@@ -31,18 +33,15 @@ export function ProjectReportsPage() {
             <ProjectSubpageHeader
               projectSlug={slug}
               projectTitle={project.title}
-              pageTitle="Project Reports"
-              description="Select a report to view or download."
+              pageTitle={ui.projectReports}
+              description={ui.viewReportsDesc}
             />
           </FadeIn>
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             {reports.map((report) => (
               <FadeIn onMount key={report.slug ?? report.label}>
-                <Link
-                  href={`/projects/${slug}/document/${report.slug}`}
-                  className="group block h-full"
-                >
+                <Link href={`/projects/${slug}/document/${report.slug}`} className="group block h-full">
                   <GlassCard hover className="h-full p-6">
                     <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-cyber-accent/10 text-cyber-accent transition-colors group-hover:bg-cyber-accent/20">
                       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,7 +56,7 @@ export function ProjectReportsPage() {
                     <h2 className="font-semibold text-cyber-text transition-colors group-hover:text-cyber-accent">
                       {report.label}
                     </h2>
-                    <p className="mt-1 text-xs text-cyber-muted">PDF report</p>
+                    <p className="mt-1 text-xs text-cyber-muted">{ui.docPdf}</p>
                   </GlassCard>
                 </Link>
               </FadeIn>

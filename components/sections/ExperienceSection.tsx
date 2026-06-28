@@ -1,18 +1,20 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Motion";
-import { experience } from "@/lib/site-config";
+import { useLocale } from "@/lib/i18n";
 
 export function ExperienceSection() {
+  const { experience, ui } = useLocale();
+
   return (
     <section id="experience" className="section-padding scroll-mt-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <MotionSection>
           <SectionHeader
-            label="Experience"
-            title="Professional"
-            highlight="experience"
-            description="Practical exposure through internship and professional workplace environments."
+            label={ui.experienceLabel}
+            title={ui.experienceTitle}
+            highlight={ui.experienceHighlight}
+            description={ui.experienceDescription}
           />
         </MotionSection>
 
@@ -42,7 +44,7 @@ export function ExperienceSection() {
                 ) : null}
                 {item.responsibilities ? (
                   <div className="mt-5">
-                    <p className="mb-3 text-sm font-medium text-cyber-text">Key Responsibilities</p>
+                    <p className="mb-3 text-sm font-medium text-cyber-text">{ui.keyResponsibilities}</p>
                     <div className="flex flex-wrap gap-2">
                       {item.responsibilities.map((task) => (
                         <span

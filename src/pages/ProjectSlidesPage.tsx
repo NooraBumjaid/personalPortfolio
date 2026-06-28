@@ -3,20 +3,21 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/Button";
 import { FadeIn, PageTransition } from "@/components/motion/FadeIn";
 import { ProjectSubpageHeader } from "@/components/projects/ProjectSubpageHeader";
-import { getProjectBySlug, getProjectDocument } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 import { withBasePath } from "@/lib/paths";
 import { useDocumentTitle } from "@/lib/use-document-title";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
 export function ProjectSlidesPage() {
   const { slug = "" } = useParams<{ slug: string }>();
+  const { getProjectBySlug, getProjectDocument, ui } = useLocale();
   const project = getProjectBySlug(slug);
   const document = project ? getProjectDocument(project, "slides") : undefined;
 
   useDocumentTitle(
     project && document
-      ? `${project.title} — ${document.label} | Noora Bumjaid`
-      : "Not Found"
+      ? `${project.title} — ${document.label} | ${ui.documentTitleSuffix}`
+      : ui.documentTitleNotFound
   );
 
   if (!project || !document) return <NotFoundPage />;
@@ -30,10 +31,10 @@ export function ProjectSlidesPage() {
               projectSlug={slug}
               projectTitle={project.title}
               pageTitle={document.label}
-              description="Senior project presentation deck."
+              description={ui.viewSlidesDesc}
             >
               <Button href={document.url} download variant="secondary" size="sm">
-                Download PDF
+                {ui.downloadPdf}
               </Button>
             </ProjectSubpageHeader>
           </FadeIn>

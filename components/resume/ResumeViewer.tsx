@@ -1,18 +1,18 @@
 import { Button } from "@/components/ui/Button";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { PdfScrollViewer } from "@/components/resume/PdfScrollViewer";
-import { siteConfig } from "@/lib/site-config";
+import { useLocale } from "@/lib/i18n";
 import { withBasePath } from "@/lib/paths";
 import { cn } from "@/lib/utils";
 
 interface ResumeViewerProps {
   className?: string;
-  /** Taller viewer for the dedicated resume page */
   tall?: boolean;
 }
 
 export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
-  const resumePath = withBasePath(siteConfig.resumePath);
+  const { site, ui } = useLocale();
+  const resumePath = withBasePath(site.resumePath);
 
   return (
     <GlassCard className={cn("overflow-hidden", className)}>
@@ -25,8 +25,8 @@ export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
           </div>
           <span className="font-mono text-xs text-cyber-muted">Noora_Bumjaid_CV.pdf</span>
         </div>
-        <Button href={siteConfig.resumePath} download variant="secondary" size="sm">
-          Download CV
+        <Button href={site.resumePath} download variant="secondary" size="sm">
+          {ui.downloadCv}
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
               strokeLinecap="round"
@@ -40,7 +40,7 @@ export function ResumeViewer({ className, tall = false }: ResumeViewerProps) {
 
       <PdfScrollViewer
         src={resumePath}
-        title={`${siteConfig.name} Resume`}
+        title={`${site.name} Resume`}
         className={cn(
           "bg-cyber-surface",
           tall ? "min-h-[75vh] md:min-h-[80vh]" : "min-h-[28rem] md:min-h-[32rem]"

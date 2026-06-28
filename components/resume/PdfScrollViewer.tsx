@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/lib/i18n";
 import { GlobalWorkerOptions, getDocument } from "pdfjs-dist";
 import pdfWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 
@@ -12,6 +13,7 @@ interface PdfScrollViewerProps {
 }
 
 export function PdfScrollViewer({ src, title, className }: PdfScrollViewerProps) {
+  const { ui } = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -69,7 +71,7 @@ export function PdfScrollViewer({ src, title, className }: PdfScrollViewerProps)
         if (!cancelled) setLoading(false);
       } catch {
         if (!cancelled) {
-          setError("Unable to load CV preview.");
+          setError(ui.cvLoadError);
           setLoading(false);
         }
       }
@@ -80,13 +82,13 @@ export function PdfScrollViewer({ src, title, className }: PdfScrollViewerProps)
     return () => {
       cancelled = true;
     };
-  }, [src, title]);
+  }, [src, title, ui.cvLoadError]);
 
   return (
     <div className={cn("relative flex w-full flex-col", className)}>
       {loading ? (
         <p className="absolute inset-0 flex items-center justify-center text-sm text-cyber-muted">
-          Loading CV...
+          {ui.loadingCv}
         </p>
       ) : null}
       {error ? (

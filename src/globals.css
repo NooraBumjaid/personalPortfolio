@@ -6,6 +6,15 @@
   :root {
     --font-inter: "Inter", system-ui, sans-serif;
     --font-jetbrains: "JetBrains Mono", monospace;
+    --font-arabic: "IBM Plex Sans Arabic", "Inter", system-ui, sans-serif;
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  html[dir="rtl"] .font-mono {
+    font-family: var(--font-jetbrains);
   }
 
   html {

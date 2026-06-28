@@ -3,18 +3,19 @@ import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/Button";
 import { FadeIn, PageTransition } from "@/components/motion/FadeIn";
 import { ProjectSubpageHeader } from "@/components/projects/ProjectSubpageHeader";
-import { getProjectBySlug } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 import { useDocumentTitle } from "@/lib/use-document-title";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
 export function ProjectPrototypePage() {
   const { slug = "" } = useParams<{ slug: string }>();
+  const { getProjectBySlug, ui } = useLocale();
   const project = getProjectBySlug(slug);
 
   useDocumentTitle(
     project?.prototypeUrl
-      ? `${project.title} — Figma Prototype | Noora Bumjaid`
-      : "Not Found"
+      ? `${project.title} — ${ui.projectPrototype} | ${ui.documentTitleSuffix}`
+      : ui.documentTitleNotFound
   );
 
   if (!project?.prototypeUrl?.trim()) return <NotFoundPage />;
@@ -27,11 +28,11 @@ export function ProjectPrototypePage() {
             <ProjectSubpageHeader
               projectSlug={slug}
               projectTitle={project.title}
-              pageTitle="Figma Prototype"
-              description="Interactive interface prototype and system design preview."
+              pageTitle={ui.projectPrototype}
+              description={ui.viewPrototypeDesc}
             >
               <Button href={project.prototypeUrl} external variant="secondary" size="sm">
-                Open in New Tab
+                {ui.openInNewTab}
               </Button>
             </ProjectSubpageHeader>
           </FadeIn>
@@ -41,7 +42,7 @@ export function ProjectPrototypePage() {
               <div className="relative aspect-[16/10] w-full bg-cyber-surface">
                 <iframe
                   src={project.prototypeUrl}
-                  title={`${project.title} Figma prototype`}
+                  title={`${project.title} prototype`}
                   className="absolute inset-0 h-full w-full"
                 />
               </div>

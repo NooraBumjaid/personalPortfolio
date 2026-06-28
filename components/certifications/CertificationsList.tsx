@@ -1,9 +1,11 @@
 import { GlassCard } from "@/components/ui/GlassCard";
 import { DocumentLink } from "@/components/ui/DocumentLink";
 import { MotionStagger, MotionItem } from "@/components/motion/Motion";
-import { certifications } from "@/lib/site-config";
+import { useLocale } from "@/lib/i18n";
 
 export function CertificationsList() {
+  const { certifications, ui } = useLocale();
+
   return (
     <MotionStagger className="flex flex-wrap justify-center gap-4">
       {certifications.map((cert) => (
@@ -30,7 +32,7 @@ export function CertificationsList() {
             {"document" in cert && cert.document ? (
               <div className="mt-auto px-3 pb-2 pt-4">
                 <div className="flex justify-center">
-                  <DocumentLink label="View Certificate" url={cert.document} />
+                  <DocumentLink label={ui.viewCertificate} url={cert.document} />
                 </div>
               </div>
             ) : null}

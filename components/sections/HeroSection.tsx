@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/Button";
 import { OpenForWorkBadge } from "@/components/ui/OpenForWorkBadge";
 import { MotionHero } from "@/components/motion/Motion";
+import { useLocale } from "@/lib/i18n";
 import { withBasePath } from "@/lib/paths";
-import { heroStats, siteConfig } from "@/lib/site-config";
 
 export function HeroSection() {
+  const { site, heroStats, ui } = useLocale();
+
   return (
     <section
       id="home"
@@ -20,42 +22,40 @@ export function HeroSection() {
             <div className="mb-6 flex flex-wrap items-center gap-3">
               <OpenForWorkBadge />
               <span className="inline-flex items-center rounded-full border border-cyber-border bg-white/5 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-cyber-muted">
-                Cybersecurity Portfolio
+                {ui.portfolioBadge}
               </span>
             </div>
           </MotionHero>
 
           <MotionHero delay={0.08}>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-cyber-text sm:text-5xl lg:text-6xl">
-              <span className="cyber-gradient-text">{siteConfig.name}</span>
+              <span className="cyber-gradient-text">{site.name}</span>
             </h1>
           </MotionHero>
 
           <MotionHero delay={0.14}>
             <div className="mt-5 space-y-1">
-              <p className="text-xl font-semibold text-cyber-text sm:text-2xl">
-                {siteConfig.title}
-              </p>
-              <p className="text-base text-cyber-cyan sm:text-lg">{siteConfig.subtitle}</p>
+              <p className="text-xl font-semibold text-cyber-text sm:text-2xl">{site.title}</p>
+              <p className="text-base text-cyber-cyan sm:text-lg">{site.subtitle}</p>
             </div>
           </MotionHero>
 
           <MotionHero delay={0.2}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-cyber-muted sm:text-lg">
-              {siteConfig.heroBio}
+              {site.heroBio}
             </p>
           </MotionHero>
 
           <MotionHero delay={0.26}>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="#projects" size="lg">
-                View Projects
+                {ui.viewProjects}
               </Button>
               <Button href="/resume" variant="secondary" size="lg">
-                View CV
+                {ui.viewCv}
               </Button>
               <Button href="#contact" variant="secondary" size="lg">
-                Contact Me
+                {ui.contactMe}
               </Button>
             </div>
           </MotionHero>
@@ -79,7 +79,7 @@ export function HeroSection() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-cyber-surface">
                 <img
                   src={withBasePath("/profile.png")}
-                  alt={siteConfig.name}
+                  alt={site.name}
                   className="h-full w-full object-contain object-center"
                 />
               </div>

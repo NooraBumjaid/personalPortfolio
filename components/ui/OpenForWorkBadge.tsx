@@ -1,4 +1,4 @@
-import { siteConfig } from "@/lib/site-config";
+import { useLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 interface OpenForWorkBadgeProps {
@@ -15,11 +15,10 @@ function StatusDot() {
   );
 }
 
-export function OpenForWorkBadge({
-  variant = "inline",
-  className,
-}: OpenForWorkBadgeProps) {
-  if (!siteConfig.openForWork) return null;
+export function OpenForWorkBadge({ variant = "inline", className }: OpenForWorkBadgeProps) {
+  const { site } = useLocale();
+
+  if (!site.openForWork) return null;
 
   if (variant === "banner") {
     return (
@@ -35,15 +34,15 @@ export function OpenForWorkBadge({
             <div className="inline-flex items-center gap-2.5 rounded-full border border-cyber-accent/30 bg-cyber-accent/10 px-4 py-1.5">
               <StatusDot />
               <span className="font-mono text-xs font-semibold uppercase tracking-widest text-cyber-accent">
-                {siteConfig.openForWorkLabel}
+                {site.openForWorkLabel}
               </span>
             </div>
             <p className="max-w-2xl text-sm leading-relaxed text-cyber-muted md:text-base">
-              {siteConfig.openForWorkDescription}
+              {site.openForWorkDescription}
             </p>
           </div>
           <div className="flex flex-wrap gap-2 md:justify-end">
-            {siteConfig.openForWorkTypes.map((type) => (
+            {site.openForWorkTypes.map((type) => (
               <span
                 key={type}
                 className="rounded-full border border-cyber-border bg-white/5 px-3 py-1 font-mono text-[11px] text-cyber-muted"
@@ -66,7 +65,7 @@ export function OpenForWorkBadge({
     >
       <StatusDot />
       <span className="font-mono text-xs font-semibold uppercase tracking-widest text-cyber-accent">
-        {siteConfig.openForWorkLabel}
+        {site.openForWorkLabel}
       </span>
     </span>
   );

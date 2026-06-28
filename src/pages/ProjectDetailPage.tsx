@@ -7,7 +7,7 @@ import { withBasePath } from "@/lib/paths";
 import { ProjectMeta } from "@/components/projects/ProjectMeta";
 import { ProjectGallery } from "@/components/projects/ProjectGallery";
 import { ProjectMediaButtons } from "@/components/projects/ProjectMediaButtons";
-import { getProjectBySlug } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 import { useDocumentTitle } from "@/lib/use-document-title";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
@@ -29,9 +29,12 @@ function ListSection({ title, items }: { title: string; items: string[] }) {
 
 export function ProjectDetailPage() {
   const { slug = "" } = useParams<{ slug: string }>();
+  const { getProjectBySlug, ui } = useLocale();
   const project = getProjectBySlug(slug);
 
-  useDocumentTitle(project ? `${project.title} | Noora Bumjaid` : "Project Not Found");
+  useDocumentTitle(
+    project ? `${project.title} | ${ui.documentTitleSuffix}` : ui.projectNotFound
+  );
 
   if (!project) return <NotFoundPage />;
 
@@ -44,10 +47,10 @@ export function ProjectDetailPage() {
               href="/projects"
               className="inline-flex items-center gap-2 text-sm text-cyber-muted transition-colors hover:text-cyber-accent"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to projects
+              {ui.backToProjects}
             </Link>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -67,12 +70,12 @@ export function ProjectDetailPage() {
               <div className="mt-6 flex flex-wrap gap-3">
                 {project.liveUrl ? (
                   <Button href={project.liveUrl} external size="sm">
-                    Live Website
+                    {ui.liveWebsite}
                   </Button>
                 ) : null}
                 {project.githubUrl ? (
                   <Button href={project.githubUrl} external variant="secondary" size="sm">
-                    View on GitHub
+                    {ui.viewOnGithub}
                   </Button>
                 ) : null}
               </div>
@@ -83,7 +86,9 @@ export function ProjectDetailPage() {
             {project.technologies.length ? (
               <FadeIn onMount>
                 <GlassCard className="p-6 md:p-8">
-                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Technologies</h2>
+                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
+                    {ui.technologies}
+                  </h2>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
@@ -120,16 +125,20 @@ export function ProjectDetailPage() {
 
             <FadeIn onMount>
               <GlassCard className="p-6 md:p-8">
-                <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Overview</h2>
-                <p className="leading-relaxed text-cyber-muted">{project.overview}</p>
+                <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
+                  {ui.overview}
+                </h2>
+                <p className="leading-relaxed text-cyber-muted" dir="auto">{project.overview}</p>
               </GlassCard>
             </FadeIn>
 
             {project.problem ? (
               <FadeIn onMount>
                 <GlassCard className="p-6 md:p-8">
-                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Problem</h2>
-                  <p className="leading-relaxed text-cyber-muted">{project.problem}</p>
+                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
+                    {ui.problem}
+                  </h2>
+                  <p className="leading-relaxed text-cyber-muted" dir="auto">{project.problem}</p>
                 </GlassCard>
               </FadeIn>
             ) : null}
@@ -137,39 +146,43 @@ export function ProjectDetailPage() {
             {project.solution ? (
               <FadeIn onMount>
                 <GlassCard className="p-6 md:p-8">
-                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Solution</h2>
-                  <p className="leading-relaxed text-cyber-muted">{project.solution}</p>
+                  <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
+                    {ui.solution}
+                  </h2>
+                  <p className="leading-relaxed text-cyber-muted" dir="auto">{project.solution}</p>
                 </GlassCard>
               </FadeIn>
             ) : null}
 
             {project.features.length ? (
               <FadeIn onMount>
-                <ListSection title="Features" items={project.features} />
+                <ListSection title={ui.features} items={project.features} />
               </FadeIn>
             ) : null}
 
             {project.contributions.length ? (
               <FadeIn onMount>
-                <ListSection title="My Contributions" items={project.contributions} />
+                <ListSection title={ui.myContributions} items={project.contributions} />
               </FadeIn>
             ) : null}
 
             {project.challenges?.length ? (
               <FadeIn onMount>
-                <ListSection title="Challenges" items={project.challenges} />
+                <ListSection title={ui.challenges} items={project.challenges} />
               </FadeIn>
             ) : null}
 
             {project.lessonsLearned?.length ? (
               <FadeIn onMount>
-                <ListSection title="Lessons Learned" items={project.lessonsLearned} />
+                <ListSection title={ui.lessonsLearned} items={project.lessonsLearned} />
               </FadeIn>
             ) : null}
 
             <FadeIn onMount>
               <GlassCard className="p-6 md:p-8">
-                <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">Outcome</h2>
+                <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
+                  {ui.outcome}
+                </h2>
                 <p className="leading-relaxed text-cyber-muted">{project.outcome}</p>
               </GlassCard>
             </FadeIn>
@@ -200,9 +213,9 @@ export function ProjectDetailPage() {
 
           <FadeIn onMount className="mt-12 flex flex-wrap gap-4">
             <Button href="/projects" variant="secondary">
-              View all projects
+              {ui.viewAllProjectsLower}
             </Button>
-            <Button href="/#contact">Discuss this project</Button>
+            <Button href="/#contact">{ui.discussProject}</Button>
           </FadeIn>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { withBasePath } from "@/lib/paths";
 import { ProjectGalleryImage } from "@/lib/projects";
+import { useLocale } from "@/lib/i18n";
 
 interface ProjectGalleryProps {
   title?: string;
@@ -11,10 +12,12 @@ interface ProjectGalleryProps {
 }
 
 export function ProjectGallery({
-  title = "Role-Based Views",
+  title,
   projectTitle,
   items,
 }: ProjectGalleryProps) {
+  const { ui } = useLocale();
+  const galleryTitle = title ?? ui.roleBasedViews;
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const reduceMotion = useReducedMotion();
 
@@ -54,7 +57,7 @@ export function ProjectGallery({
     <>
       <GlassCard className="overflow-hidden p-6 md:p-8">
         <h2 className="mb-4 font-mono text-sm uppercase tracking-wider text-cyber-accent">
-          {title}
+          {galleryTitle}
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
           {items.map((item, index) => (
@@ -73,7 +76,7 @@ export function ProjectGallery({
                 />
                 <span className="pointer-events-none absolute inset-0 flex items-end justify-center bg-gradient-to-t from-cyber-bg/80 via-transparent to-transparent pb-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <span className="rounded-full border border-cyber-border/60 bg-cyber-bg/80 px-3 py-1 text-xs text-cyber-muted backdrop-blur-sm">
-                    Click to enlarge
+                    {ui.clickToEnlarge}
                   </span>
                 </span>
               </button>
@@ -143,7 +146,7 @@ export function ProjectGallery({
                     disabled={activeIndex === 0}
                     className="rounded-xl border border-cyber-border bg-cyber-surface px-4 py-2 text-sm text-cyber-muted transition-colors hover:border-cyber-accent/40 hover:text-cyber-accent disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    Previous
+                    {ui.previous}
                   </button>
                   <p className="text-xs text-cyber-muted">
                     {activeIndex + 1} / {items.length}
@@ -154,7 +157,7 @@ export function ProjectGallery({
                     disabled={activeIndex === items.length - 1}
                     className="rounded-xl border border-cyber-border bg-cyber-surface px-4 py-2 text-sm text-cyber-muted transition-colors hover:border-cyber-accent/40 hover:text-cyber-accent disabled:cursor-not-allowed disabled:opacity-40"
                   >
-                    Next
+                    {ui.next}
                   </button>
                 </div>
               ) : null}
