@@ -1,7 +1,6 @@
 import { Link, usePathname } from "@/lib/router";
 import { useEffect, useState } from "react";
 import { useLocale } from "@/lib/i18n";
-import { withBasePath } from "@/lib/paths";
 import { cn } from "@/lib/utils";
 
 function LanguageToggle({ className }: { className?: string }) {
@@ -67,7 +66,7 @@ export function Navbar() {
   const getHref = (href: string) => {
     if (href.startsWith("/")) return href;
     if (isHome) return href;
-    return `${withBasePath("/")}${href}`;
+    return `/${href}`;
   };
 
   const isLinkActive = (href: string) => {
@@ -79,7 +78,7 @@ export function Navbar() {
   const renderNavLink = (link: (typeof navLinks)[number], onNavigate?: () => void) => {
     const active = isLinkActive(link.href);
     const className = cn(
-      "relative shrink-0 rounded-lg px-2 py-1.5 text-xs font-medium transition-colors xl:px-2.5 xl:py-2 xl:text-[13px] 2xl:px-3 2xl:text-sm",
+      "relative shrink-0 whitespace-nowrap rounded-lg px-1.5 py-1.5 text-[11px] font-medium transition-colors xl:px-2 xl:py-2 xl:text-xs 2xl:px-3 2xl:text-sm",
       onNavigate ? "block px-4 py-3" : "",
       active
         ? "bg-cyber-accent/10 text-cyber-accent"
@@ -95,10 +94,18 @@ export function Navbar() {
       );
     }
 
+    if (isHome) {
+      return (
+        <a href={link.href} className={className} onClick={onNavigate}>
+          {link.label}
+        </a>
+      );
+    }
+
     return (
-      <a href={getHref(link.href)} className={className} onClick={onNavigate}>
+      <Link href={getHref(link.href)} className={className} onClick={onNavigate}>
         {link.label}
-      </a>
+      </Link>
     );
   };
 
@@ -108,13 +115,13 @@ export function Navbar() {
         <div className="nav-bar mt-4 flex min-w-0 items-center gap-6 rounded-2xl border border-cyber-border px-4 py-3 sm:px-6 lg:gap-8">
           <Link href="/" className="group flex shrink-0 items-center gap-2.5">
             <span className="font-mono text-sm font-bold text-cyber-accent">NB</span>
-            <span className="hidden whitespace-nowrap text-sm font-medium leading-none tracking-tight text-cyber-text sm:block">
+            <span className="hidden whitespace-nowrap text-sm font-medium leading-none tracking-tight text-cyber-text xl:block">
               {site.shortName}
             </span>
           </Link>
 
-          <div className="hidden min-w-0 flex-1 items-center justify-end gap-3 lg:flex">
-            <ul className="flex min-w-0 max-w-full flex-wrap items-center justify-end gap-x-0.5 gap-y-0.5 xl:gap-x-1">
+          <div className="hidden min-w-0 flex-1 items-center justify-end gap-2 lg:flex xl:gap-3">
+            <ul className="flex flex-nowrap items-center justify-end gap-x-0.5 xl:gap-x-1">
               {navLinks.map((link) => (
                 <li key={link.href} className="shrink-0">
                   {renderNavLink(link)}

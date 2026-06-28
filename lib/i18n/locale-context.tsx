@@ -52,10 +52,21 @@ interface LocaleContextValue {
   getProjectDocument: (project: Project, docSlug: string) => ProjectDocument | undefined;
 }
 
+const STORAGE_KEY = "portfolio-locale";
+
+function readSessionLocale(): Locale {
+  if (typeof window === "undefined") return "en";
+  return sessionStorage.getItem(STORAGE_KEY) === "ar" ? "ar" : "en";
+}
+
 const LocaleContext = createContext<LocaleContextValue | null>(null);
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>("en");
+
+  useEffect(() => {
+    setLocaleState(readSessionLocale());
+  }, []);
 
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);
@@ -66,6 +77,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY, locale);
     document.documentElement.lang = locale;
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
   }, [locale]);
