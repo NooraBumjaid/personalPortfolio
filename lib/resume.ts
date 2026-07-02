@@ -6,7 +6,7 @@ export const RESUME_ASSETS: Record<
 > = {
   en: {
     path: "/resume.pdf",
-    filename: "NOORACV-07-02.pdf",
+    filename: "Noora_Abdulrahman_Rashid_Bumjaid_FlowCV_Resume_2026-07-02.pdf",
     title: "Noora Bumjaid Resume",
   },
   ar: {
