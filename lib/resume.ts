@@ -1,6 +1,21 @@
-import portfolioEn from "@/data/portfolio.json";
+import type { Locale } from "@/lib/i18n/types";
 
-/** CV is English-only — same PDF in every locale. */
-export const RESUME_PDF_PATH = portfolioEn.site.resumePath;
+export const RESUME_ASSETS: Record<
+  Locale,
+  { path: string; filename: string; title: string }
+> = {
+  en: {
+    path: "/resume.pdf",
+    filename: "NOORACV-07-02.pdf",
+    title: "Noora Bumjaid Resume",
+  },
+  ar: {
+    path: "/resume.ar.pdf",
+    filename: "سيرة ذاتية نورة بومجيد.pdf",
+    title: "سيرة ذاتية نورة بومجيد",
+  },
+};
 
-export const RESUME_PDF_FILENAME = "Noora_Bumjaid_CV.pdf";
+export function getResumeAsset(locale: Locale) {
+  return RESUME_ASSETS[locale];
+}

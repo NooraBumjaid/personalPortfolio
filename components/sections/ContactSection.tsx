@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/Button";
 import { OpenForWorkBadge } from "@/components/ui/OpenForWorkBadge";
 import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Motion";
 import { useLocale } from "@/lib/i18n";
-import { RESUME_PDF_PATH } from "@/lib/resume";
 
 export function ContactSection() {
   const { site, ui } = useLocale();
@@ -111,7 +110,7 @@ export function ContactSection() {
                   <Button href="/resume" size="md">
                     {ui.viewCv}
                   </Button>
-                  <Button href={RESUME_PDF_PATH} download variant="secondary" size="md">
+                  <Button href={site.resumePath} download variant="secondary" size="md">
                     {ui.download}
                   </Button>
                 </div>
