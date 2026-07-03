@@ -6,13 +6,13 @@ export const RESUME_ASSETS: Record<
 > = {
   en: {
     path: "/resume.pdf",
-    filename: "Noora_Abdulrahman_Rashid_Bumjaid_FlowCV_Resume_2026-07-02.pdf",
+    filename: "NOORABUMJAID_CV.pdf",
     title: "Noora Bumjaid Resume",
   },
   ar: {
     path: "/resume.ar.pdf",
-    filename: "سيرة ذاتية نورة بومجيد.pdf",
-    title: "سيرة ذاتية نورة بومجيد",
+    filename: "نوره-بومجيد.pdf",
+    title: "نوره بومجيد — السيرة الذاتية",
   },
 };
 
