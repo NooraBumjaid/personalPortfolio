@@ -1,4 +1,5 @@
 import { Navigate, Route, Routes } from "@/lib/router";
+import { useLocale } from "@/lib/i18n";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
@@ -18,11 +19,13 @@ import { ProjectDocumentPage } from "@/src/pages/ProjectDocumentPage";
 import { NotFoundPage } from "@/src/pages/NotFoundPage";
 
 export function App() {
+  const { locale } = useLocale();
+
   return (
     <div className="flex min-h-screen flex-col font-sans">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-1">
+      <main key={locale} className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<Navigate to="/#about" replace />} />

@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
+import { useLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 interface FadeInProps {
@@ -26,10 +27,13 @@ export function FadeIn({
   duration = 0.35,
   onMount = false,
 }: FadeInProps) {
+  const { locale } = useLocale();
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    setVisible(false);
+
     if (onMount) {
       const frame = requestAnimationFrame(() => setVisible(true));
       return () => cancelAnimationFrame(frame);
@@ -50,7 +54,7 @@ export function FadeIn({
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [onMount]);
+  }, [onMount, locale]);
 
   return (
     <div

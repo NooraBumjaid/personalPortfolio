@@ -1,5 +1,6 @@
 import { motion, useReducedMotion, type HTMLMotionProps } from "framer-motion";
 import { ReactNode } from "react";
+import { useLocale } from "@/lib/i18n";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -18,9 +19,11 @@ export function MotionSection({
   ...props
 }: MotionSectionProps) {
   const reduceMotion = useReducedMotion();
+  const { locale } = useLocale();
 
   return (
     <motion.div
+      key={locale}
       initial={reduceMotion ? false : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
@@ -46,9 +49,11 @@ export function MotionStagger({
   stagger = 0.08,
 }: MotionStaggerProps) {
   const reduceMotion = useReducedMotion();
+  const { locale } = useLocale();
 
   return (
     <motion.div
+      key={locale}
       initial={reduceMotion ? false : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
@@ -100,9 +105,11 @@ export function MotionHero({
   delay?: number;
 }) {
   const reduceMotion = useReducedMotion();
+  const { locale } = useLocale();
 
   return (
     <motion.div
+      key={locale}
       initial={reduceMotion ? false : { opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}

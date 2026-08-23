@@ -276,6 +276,13 @@
   ],
   "leadership": [
     {
+      "role": "Volunteer — Ushers Committee",
+      "organization": "Youth City 2030",
+      "period": "Jul 12 – Aug 20, 2026",
+      "description": "Volunteered with the Ushers Committee at Youth City 2030, supporting event organization, visitor registration, and smooth visitor flow management.",
+      "featured": true
+    },
+    {
       "role": "Startup Bahrain Participant",
       "organization": "Startup Bahrain — University of Bahrain",
       "period": "May 2026",
@@ -562,6 +569,55 @@
       "figmaUrl": null,
       "gallery": null,
       "content": "\n## Problem Statement\n\nBeginner cybersecurity students often understand networking theory in lectures but struggle when applying it inside real packet captures. A single PCAP file can contain overlapping protocol behavior, filtering requirements, and suspicious traffic patterns that feel overwhelming without guided practice. Many educational environments also provide limited hands-on packet-analysis experience, and fixed exercises become predictable once learners memorize investigation patterns.\n\n## Solution\n\nThaghrah is a Flask-based learning platform that combines structured progression, downloadable PCAP investigations, protocol guides, and an AI Lab that generates dynamic scenarios from natural-language prompts. Learners analyze traffic locally in Wireshark, submit flags, earn points and badges, and unlock challenges sequentially as they build confidence.\n\n## Protocol Categories\n\nThe fixed curriculum includes **40 challenges** distributed across **8 protocol families**, with **5 challenges per category**:\n\n- HTTP\n- TCP\n- DNS\n- FTP\n- ICMP\n- SMTP\n- TLS\n- Network Forensics\n\n## System Architecture\n\nThe platform uses a Flask application layer for authentication, routing, challenge management, and the AI Lab. Core logic handles session management, sequential unlocking, and flag validation. Persistent data — including user progress, badges, and AI challenge metadata — is stored in SQLite. The AI Lab integrates with external LLM providers (Grok API) and uses Scapy to generate downloadable PCAP files for investigation.\n\n![System Architecture](/projects/thaghrah-architecture.png)\n\n## Key Results\n\nEvaluation findings from functional, security, performance, and AI-accuracy testing showed that:\n\n- PCAP downloads, flag validation, hint penalties, and badge awarding all passed testing\n- Security controls including password hashing, XSS handling, and locked-challenge protection worked as intended\n- AI-generated scenarios increased training diversity while maintaining realistic investigation workflows\n- Structured progression and gamification improved learner engagement in a controlled educational environment\n\n## Comparison with Related Platforms\n\nCompared with platforms like OverTheWire and TryHackMe, Thaghrah focuses specifically on **Wireshark-based forensic analysis** and protocol-diverse traffic investigation rather than general security wargames or web exploitation environments.\n"
+    },
+    {
+      "slug": "youth-city-visitor-management",
+      "title": "Youth City 2030 — Visitor Registration & Tracking System",
+      "overview": "Developed and implemented digital solutions to streamline visitor registration and occupancy tracking for Youth City 2030 events, significantly reducing manual administrative work through process automation.",
+      "technologies": [
+        "Google Forms",
+        "Google Sheets",
+        "Google Apps Script",
+        "Process Automation"
+      ],
+      "features": [
+        "Fully automated registration system with daily ticket availability management",
+        "Visitor capacity limits and secure registration record keeping",
+        "Privacy-focused visitor tracking using unique visitor IDs instead of personal data",
+        "Real-time occupancy monitoring and 45-minute session management",
+        "Interactive visitor cards with automated 15-minute warning notifications",
+        "Overtime alerts and live tracking of available visitor slots"
+      ],
+      "contributions": [
+        "Designed and built an automated registration system using Google Forms, Google Sheets, and Google Apps Script",
+        "Implemented capacity enforcement and secure registration record management",
+        "Built a lightweight, privacy-focused visitor tracking system with unique visitor IDs",
+        "Delivered real-time occupancy monitoring, session management, and automated notifications"
+      ],
+      "outcome": "The solution improved operational efficiency, enhanced visitor flow management, and supported data-driven event monitoring in a scalable and user-friendly manner.",
+      "category": "Process Automation",
+      "featured": true,
+      "order": 2,
+      "period": "Jul 12 – Aug 20, 2026",
+      "liveUrl": null,
+      "githubUrl": null,
+      "course": null,
+      "supervisor": null,
+      "team": null,
+      "objectives": null,
+      "futureWork": null,
+      "videos": null,
+      "documents": null,
+      "image": null,
+      "cardDescription": "Automated visitor registration and privacy-focused occupancy tracking system built for Youth City 2030 events.",
+      "problem": "Manual visitor registration and occupancy tracking created administrative overhead and made it difficult to manage visitor flow during Youth City 2030 events.",
+      "solution": "A Google Workspace–based automation stack combining automated registration, capacity controls, and a privacy-focused visitor tracking system with real-time occupancy monitoring.",
+      "challenges": null,
+      "lessonsLearned": null,
+      "prototypeUrl": null,
+      "figmaUrl": null,
+      "gallery": null,
+      "content": "\n## Context\n\nWhile volunteering with the Ushers Committee at Youth City 2030, I developed digital solutions to streamline visitor registration and occupancy tracking for events.\n\n## Registration System\n\nDesigned a fully automated registration system using Google Forms, Google Sheets, and Google Apps Script to manage daily ticket availability, enforce visitor capacity limits, and securely maintain registration records.\n\n## Visitor Tracking System\n\nBuilt a lightweight, privacy-focused visitor tracking system that used unique visitor IDs instead of personal data, providing:\n\n- Real-time occupancy monitoring\n- 45-minute session management\n- Interactive visitor cards\n- Automated 15-minute warning notifications\n- Overtime alerts\n- Live tracking of available visitor slots\n\n## Impact\n\nThe solution improved operational efficiency, enhanced visitor flow management, and supported data-driven event monitoring in a scalable and user-friendly manner.\n"
     },
     {
       "slug": "enterprise-risk-assessment",

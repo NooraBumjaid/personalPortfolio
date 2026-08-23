@@ -276,6 +276,13 @@
   ],
   "leadership": [
     {
+      "role": "Volunteer — Ushers Committee",
+      "organization": "Youth City 2030",
+      "period": "Jul 12 – Aug 20, 2026",
+      "description": "Volunteered with the Ushers Committee at Youth City 2030. Developed and implemented digital solutions to streamline visitor registration and occupancy tracking for events, significantly reducing manual administrative work through process automation. Designed a fully automated registration system using Google Forms, Google Sheets, and Google Apps Script to manage daily ticket availability, enforce visitor capacity limits, and securely maintain registration records. Additionally, built a lightweight, privacy-focused visitor tracking system that used unique visitor IDs instead of personal data, providing real-time occupancy monitoring, 45-minute session management, interactive visitor cards, automated 15-minute warning notifications, overtime alerts, and live tracking of available visitor slots. The solution improved operational efficiency, enhanced visitor flow management, and supported data-driven event monitoring in a scalable and user-friendly manner.",
+      "featured": true
+    },
+    {
       "role": "Startup Bahrain Participant",
       "organization": "Startup Bahrain — University of Bahrain",
       "period": "May 2026",
