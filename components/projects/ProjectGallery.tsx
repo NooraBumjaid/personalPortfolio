@@ -60,8 +60,14 @@ export function ProjectGallery({
           {galleryTitle}
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
-          {items.map((item, index) => (
-            <div key={item.label}>
+          {items.map((item, index) => {
+            const isLastOnOwnRow = items.length % 2 === 1 && index === items.length - 1;
+
+            return (
+            <div
+              key={item.label}
+              className={isLastOnOwnRow ? "sm:col-span-2 sm:mx-auto sm:w-full sm:max-w-[calc(50%-0.75rem)]" : undefined}
+            >
               <p className="mb-3 text-sm font-medium text-cyber-text">{item.label}</p>
               <button
                 type="button"
@@ -81,7 +87,8 @@ export function ProjectGallery({
                 </span>
               </button>
             </div>
-          ))}
+            );
+          })}
         </div>
       </GlassCard>
 

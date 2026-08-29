@@ -1,5 +1,6 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { DocumentRouteLink } from "@/components/ui/DocumentLink";
 import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Motion";
 import { useLocale } from "@/lib/i18n";
 
@@ -55,6 +56,14 @@ export function ExperienceSection() {
                         </span>
                       ))}
                     </div>
+                  </div>
+                ) : null}
+                {"documents" in item && item.documents?.length && "slug" in item && item.slug ? (
+                  <div className="mt-6 flex justify-center">
+                    <DocumentRouteLink
+                      label={ui.certificate}
+                      href={`/experience/${item.slug}/media`}
+                    />
                   </div>
                 ) : null}
               </GlassCard>

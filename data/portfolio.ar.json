@@ -251,6 +251,7 @@
     {
       "role": "متدربة تكنولوجيا معلومات",
       "organization": "وزارة الداخلية",
+      "slug": "moi-internship",
       "period": "Jun 2026 – Aug 2026",
       "description": "قدمت الدعم لعمليات تكنولوجيا المعلومات داخل وزارة الداخلية، وساهمت في إدارة الأصول وصيانة قواعد البيانات والتوثيق وإعداد التقارير في بيئة حكومية منظمة. عملت مع الفريق على ضمان دقة سجلات التقنية، وتحسين جودة البيانات الداخلية، ودعم العمليات اليومية بموثوقية.",
       "highlights": [
@@ -271,6 +272,16 @@
         "Microsoft Excel",
         "الدعم التقني",
         "حفظ السجلات"
+      ],
+      "documents": [
+        {
+          "label": "الشهادة",
+          "url": "/experience/moi-internship-certificate.jpg"
+        },
+        {
+          "label": "حفل التكريم",
+          "url": "/experience/moi-internship-ceremony.jpg"
+        }
       ]
     }
   ],
@@ -280,7 +291,22 @@
       "organization": "مدينة الشباب 2030",
       "period": "Jul 12 – Aug 20, 2026",
       "description": "تطوّعت في لجنة أرض موقع في مدينة الشباب 2030، بدعم تنظيم الفعاليات وتسجيل الزوّار وإدارة تدفق الزوار بسلاسة.",
-      "featured": true
+      "featured": true,
+      "slug": "youth-city-2030",
+      "documents": [
+        {
+          "label": "حفل التكريم",
+          "url": "/activities/youth-city-2030/recognition-ceremony.jpg"
+        },
+        {
+          "label": "صورة جماعية",
+          "url": "/activities/youth-city-2030/group-photo.jpg"
+        },
+        {
+          "label": "التكريم",
+          "url": "/activities/youth-city-2030/award.jpg"
+        }
+      ]
     },
     {
       "role": "مشاركة في Startup Bahrain",
@@ -606,9 +632,16 @@
       "team": null,
       "objectives": null,
       "futureWork": null,
-      "videos": null,
+      "videos": [
+        {
+          "label": "لوحة مؤقت الزوّار — تسجيل الشاشة",
+          "url": "https://drive.google.com/file/d/16NV2QZat9p0T8qAQlqNC8ExeeNbEEzJK/view?usp=sharing",
+          "image": "/projects/youth-city/visitor-timer-board.jpg",
+          "imageLabel": "لوحة مؤقت الزوّار في مدينة الشباب 2030"
+        }
+      ],
       "documents": null,
-      "image": null,
+      "image": "/projects/youth-city/visitor-timer-board.jpg",
       "cardDescription": "نظام آلي لتسجيل الزوّار وتتبّع الإشغال يراعي الخصوصية، بُني لفعاليات مدينة الشباب 2030.",
       "problem": "أدّى التسجيل اليدوي للزوّار وتتبّع الإشغال إلى عبء إداري كبير وصعّب إدارة تدفق الزوار خلال فعاليات مدينة الشباب 2030.",
       "solution": "حل أتمتة مبني على Google Workspace يجمع بين التسجيل الآلي وضوابط السعة ونظام تتبّع يراعي الخصوصية مع مراقبة فورية للإشغال.",

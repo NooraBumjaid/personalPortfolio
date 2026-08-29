@@ -251,6 +251,7 @@
     {
       "role": "IT Intern",
       "organization": "Ministry of Interior",
+      "slug": "moi-internship",
       "period": "Jun 2026 – Aug 2026",
       "description": "Supported IT and operational workflows within the Ministry of Interior, contributing to asset management, database maintenance, documentation, and reporting in a structured government environment. Worked closely with staff to keep technology records accurate, improve internal data quality, and support reliable day-to-day IT operations.",
       "highlights": [
@@ -271,6 +272,16 @@
         "Microsoft Excel",
         "IT Support",
         "Record Keeping"
+      ],
+      "documents": [
+        {
+          "label": "Certificate",
+          "url": "/experience/moi-internship-certificate.jpg"
+        },
+        {
+          "label": "Ceremony",
+          "url": "/experience/moi-internship-ceremony.jpg"
+        }
       ]
     }
   ],
@@ -280,7 +291,22 @@
       "organization": "Youth City 2030",
       "period": "Jul 12 – Aug 20, 2026",
       "description": "Volunteered with the Ushers Committee at Youth City 2030, supporting event organization, visitor registration, and smooth visitor flow management.",
-      "featured": true
+      "featured": true,
+      "slug": "youth-city-2030",
+      "documents": [
+        {
+          "label": "Recognition ceremony",
+          "url": "/activities/youth-city-2030/recognition-ceremony.jpg"
+        },
+        {
+          "label": "Group photo",
+          "url": "/activities/youth-city-2030/group-photo.jpg"
+        },
+        {
+          "label": "Award",
+          "url": "/activities/youth-city-2030/award.jpg"
+        }
+      ]
     },
     {
       "role": "Startup Bahrain Participant",
@@ -606,9 +632,16 @@
       "team": null,
       "objectives": null,
       "futureWork": null,
-      "videos": null,
+      "videos": [
+        {
+          "label": "Visitor Timer Board — Screen Recording",
+          "url": "https://drive.google.com/file/d/16NV2QZat9p0T8qAQlqNC8ExeeNbEEzJK/view?usp=sharing",
+          "image": "/projects/youth-city/visitor-timer-board.jpg",
+          "imageLabel": "Visitor Timer Board at Youth City 2030"
+        }
+      ],
       "documents": null,
-      "image": null,
+      "image": "/projects/youth-city/visitor-timer-board.jpg",
       "cardDescription": "Automated visitor registration and privacy-focused occupancy tracking system built for Youth City 2030 events.",
       "problem": "Manual visitor registration and occupancy tracking created administrative overhead and made it difficult to manage visitor flow during Youth City 2030 events.",
       "solution": "A Google Workspace–based automation stack combining automated registration, capacity controls, and a privacy-focused visitor tracking system with real-time occupancy monitoring.",

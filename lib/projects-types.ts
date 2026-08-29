@@ -1,6 +1,8 @@
 export interface ProjectVideo {
   label: string;
   url: string;
+  image?: string | null;
+  imageLabel?: string | null;
 }
 
 export interface ProjectDocument {
