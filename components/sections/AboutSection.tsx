@@ -1,5 +1,6 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { DocumentLinksGrid } from "@/components/ui/DocumentLink";
 import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Motion";
 import { useLocale } from "@/lib/i18n";
 
@@ -45,6 +46,9 @@ export function AboutSection() {
                     <p className="font-semibold text-cyber-text">{item.degree}</p>
                     <p className="mt-1 text-sm text-cyber-cyan">{item.institution}</p>
                     <p className="mt-1 font-mono text-xs text-cyber-muted">{item.period}</p>
+                    {"documents" in item && item.documents?.length ? (
+                      <DocumentLinksGrid documents={item.documents} className="px-0 pt-3 pb-0 sm:px-0" />
+                    ) : null}
                   </li>
                 ))}
               </ul>

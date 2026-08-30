@@ -97,8 +97,19 @@
     {
       "degree": "Bachelor of Science in Cybersecurity",
       "institution": "University of Bahrain",
+      "slug": "university-of-bahrain",
       "period": "Sep 2022 – August 2026",
-      "description": "Graduation expected August 2026. Coursework includes secure software development, network fundamentals, web application development, security principles, risk assessment, and information security fundamentals."
+      "description": "Fulfilled graduation requirements at the end of summer 2025/2026 (pending University Council approval). Cumulative GPA 2.78 (Good). Coursework includes secure software development, network fundamentals, web application development, security principles, risk assessment, and information security fundamentals.",
+      "documents": [
+        {
+          "label": "Graduation statement",
+          "url": "/education/graduation-statement.jpg"
+        },
+        {
+          "label": "Transcript",
+          "url": "/education/transcript.jpg"
+        }
+      ]
     },
     {
       "degree": "High School Diploma",

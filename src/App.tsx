@@ -43,6 +43,7 @@ export function App() {
           <Route path="/activities" element={<ActivitiesPage />} />
           <Route path="/experience/:slug/media" element={<MediaGalleryPage />} />
           <Route path="/activities/:slug/media" element={<MediaGalleryPage />} />
+          <Route path="/education/:slug/media" element={<MediaGalleryPage />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
