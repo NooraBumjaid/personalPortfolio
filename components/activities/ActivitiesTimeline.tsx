@@ -28,6 +28,28 @@ export function ActivitiesTimeline() {
                 <h3 className="mt-2 text-lg font-semibold text-cyber-text">{item.role}</h3>
                 <p className="mt-1 text-sm text-cyber-cyan">{item.organization}</p>
                 <p className="mt-3 text-sm leading-relaxed text-cyber-muted">{item.description}</p>
+                {"highlights" in item && item.highlights?.length ? (
+                  <ul className="mt-4 space-y-2">
+                    {item.highlights.map((point) => (
+                      <li key={point} className="flex items-start gap-3 text-sm leading-relaxed text-cyber-muted">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyber-accent" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                {"skills" in item && item.skills?.length ? (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {item.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-lg border border-cyber-border/60 bg-white/[0.03] px-3 py-1.5 text-xs text-cyber-muted"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
                 {imageDocuments.length > 0 && "slug" in item && item.slug ? (
                   <div className="mt-4 flex justify-center">
                     <DocumentRouteLink

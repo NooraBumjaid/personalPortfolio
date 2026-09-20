@@ -64,7 +64,7 @@ const en = {
   activitiesCardTitle: "Community",
   activitiesCardHighlight: "engagement",
   activitiesCardDescription:
-    "Leadership roles, volunteering, and extracurricular activities beyond the classroom.",
+    "Leadership roles, volunteering, workshops, and extracurricular activities beyond the classroom.",
   activitiesCardCount: (n: number) => `${n} activities`,
   awardsLabel: "Awards",
   awardsTitle: "Achievements",
@@ -157,7 +157,7 @@ const en = {
   activitiesPageTitle: "Leadership &",
   activitiesPageHighlight: "Activities",
   activitiesPageDescription:
-    "Leadership, volunteering, and extracurricular activities beyond the classroom.",
+    "Leadership, volunteering, workshops, and extracurricular activities beyond the classroom.",
   activitiesCount: (n: number) => `${n} activities`,
   resumePageTitle: "Curriculum Vitae",
   notFoundTitle: "Page Not Found",
@@ -268,7 +268,7 @@ const ar = {
   activitiesCardTitle: "مشاركة",
   activitiesCardHighlight: "مجتمعية",
   activitiesCardDescription:
-    "تطوّع، ومبادرات قيادية، وأنشطة خارج نطاق المقررات الدراسية.",
+    "تطوّع، وورش عمل، ومبادرات قيادية، وأنشطة خارج نطاق المقررات الدراسية.",
   activitiesCardCount: (n: number) =>
     arCount(n, { one: "نشاط", two: "نشاطان", few: "أنشطة", many: "نشاط" }),
   awardsLabel: "الجوائز",
@@ -370,7 +370,7 @@ const ar = {
   activitiesPageTitle: "قيادة",
   activitiesPageHighlight: "وأنشطة",
   activitiesPageDescription:
-    "تطوّع، ومبادرات، وبرامج شبابية خارج نطاق الدراسة.",
+    "تطوّع، وورش عمل، ومبادرات، وبرامج شبابية خارج نطاق الدراسة.",
   activitiesCount: (n: number) =>
     arCount(n, { one: "نشاط", two: "نشاطان", few: "أنشطة", many: "نشاط" }),
   resumePageTitle: "السيرة الذاتية",

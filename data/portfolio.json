@@ -298,6 +298,59 @@
   ],
   "leadership": [
     {
+      "role": "Web Development Workshop Facilitator",
+      "organization": "American School of Bahrain",
+      "period": "September 2026",
+      "description": "Delivered a one-day introductory Web Development workshop at the American School of Bahrain, introducing students to the fundamentals of the web through interactive activities and hands-on practice. This experience helped me strengthen my communication, presentation, and technical explanation skills as a fresh Cybersecurity graduate.",
+      "highlights": [
+        "Introduced students to the Internet, webpages, websites, clients, and basic website structure and creation.",
+        "Facilitated interactive activities and hands-on practice, including students creating their own simple websites.",
+        "Gained teaching experience by explaining technical concepts in a simple, engaging way and supporting students as they practiced."
+      ],
+      "skills": [
+        "Web Development",
+        "Communication",
+        "Presentation",
+        "Technical Explanation",
+        "Student Engagement",
+        "Workshop Delivery"
+      ],
+      "featured": true,
+      "slug": "asb-web-workshop",
+      "documents": [
+        {
+          "label": "Teaching the class",
+          "url": "/activities/asb-web-workshop/teaching.jpg"
+        },
+        {
+          "label": "Lesson slides",
+          "url": "/activities/asb-web-workshop/lesson-slides.jpg"
+        },
+        {
+          "label": "Student website activity",
+          "url": "/activities/asb-web-workshop/student-website.jpg"
+        },
+        {
+          "label": "School visitor pass",
+          "url": "/activities/asb-web-workshop/visitor-pass.jpg"
+        }
+      ]
+    },
+    {
+      "role": "United Nations Volunteer",
+      "organization": "UN Volunteers — Youth City Bahrain 2030",
+      "period": "Jul 12 – Aug 20, 2026",
+      "description": "Recognized by the United Nations Volunteers programme for active participation as a UN Volunteer in the 15th Edition of Youth City Bahrain 2030, held in Manama, Kingdom of Bahrain.",
+      "featured": true,
+      "slug": "un-volunteers-youth-city",
+      "documents": [
+        {
+          "label": "Certificate of Achievement",
+          "url": "/activities/un-volunteers-youth-city/certificate.jpg"
+        }
+      ]
+    },
+    {
       "role": "Volunteer — Ushers Committee",
       "organization": "Youth City 2030",
       "period": "Jul 12 – Aug 20, 2026",
