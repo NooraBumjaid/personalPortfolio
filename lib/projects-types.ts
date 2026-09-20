@@ -37,6 +37,7 @@ export interface Project {
   order?: number | null;
   period?: string | null;
   liveUrl?: string | null;
+  infoUrl?: string | null;
   githubUrl?: string | null;
   course?: string | null;
   supervisor?: string | null;

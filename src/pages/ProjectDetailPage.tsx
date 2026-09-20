@@ -66,11 +66,16 @@ export function ProjectDetailPage() {
               {project.title}
             </h1>
 
-            {(project.liveUrl || project.githubUrl) && (
+            {(project.liveUrl || project.infoUrl || project.githubUrl) && (
               <div className="mt-6 flex flex-wrap gap-3">
                 {project.liveUrl ? (
                   <Button href={project.liveUrl} external size="sm">
                     {ui.liveWebsite}
+                  </Button>
+                ) : null}
+                {project.infoUrl ? (
+                  <Button href={project.infoUrl} external variant="secondary" size="sm">
+                    {ui.projectWebsite}
                   </Button>
                 ) : null}
                 {project.githubUrl ? (
