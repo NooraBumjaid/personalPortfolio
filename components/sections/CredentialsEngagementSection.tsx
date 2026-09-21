@@ -16,7 +16,9 @@ export function CredentialsEngagementSection() {
       title: ui.certCardTitle,
       highlight: ui.certCardHighlight,
       description: ui.certCardDescription,
-      count: ui.certCardCount(certifications.length),
+      count: ui.certCardCount(
+        certifications.filter((cert) => !("inProgress" in cert && cert.inProgress)).length
+      ),
       icon: (
         <path
           strokeLinecap="round"

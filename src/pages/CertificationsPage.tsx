@@ -31,7 +31,9 @@ export function CertificationsPage() {
 
             <div className="mt-6 flex justify-center">
               <span className="rounded-full border border-cyber-border bg-white/5 px-4 py-1.5 font-mono text-xs text-cyber-muted">
-                {ui.certificationsCount(certifications.length)}
+                {ui.certificationsCount(
+                  certifications.filter((cert) => !("inProgress" in cert && cert.inProgress)).length
+                )}
               </span>
             </div>
 

@@ -167,6 +167,14 @@
   },
   "certifications": [
     {
+      "name": "Cisco Certified CyberOps Associate",
+      "issuer": "Cisco",
+      "year": "In Progress",
+      "shortName": "Cisco CyberOps Associate",
+      "inProgress": true,
+      "description": "Currently studying for the Cisco Certified CyberOps Associate exam. This credential validates the foundational knowledge and day-to-day operational skills used by Security Operations Centre teams to detect, analyse, and respond to cybersecurity threats and incidents. The programme covers security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures — the core competencies of a tier-one security analyst."
+    },
+    {
       "name": "Solidity for Beginners: Write and Test Smart Contracts",
       "issuer": "Coursera",
       "year": "Mar 2026",

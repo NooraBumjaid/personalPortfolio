@@ -92,6 +92,7 @@ const en = {
   mailBody: (name: string, email: string, message: string) =>
     `Name: ${name}\nEmail: ${email}\n\n${message}`,
   viewCertificate: "View Certificate",
+  inProgress: "In Progress",
   downloadCv: "Download CV",
   cvLoadError: "Unable to load CV preview.",
   backToTop: "Back to top",
@@ -298,6 +299,7 @@ const ar = {
   mailBody: (name: string, email: string, message: string) =>
     `الاسم: ${name}\nالبريد: ${email}\n\n${message}`,
   viewCertificate: "عرض الشهادة",
+  inProgress: "قيد الدراسة",
   downloadCv: "تحميل السيرة الذاتية",
   cvLoadError: "تعذّر عرض السيرة الذاتية.",
   backToTop: "العودة للأعلى",
