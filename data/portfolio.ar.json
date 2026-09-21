@@ -172,6 +172,7 @@
       "year": "قيد الدراسة",
       "shortName": "Cisco CyberOps Associate",
       "inProgress": true,
+      "group": "professional",
       "description": "أدرس حاليًا لامتحان شهادة Cisco Certified CyberOps Associate. تثبت هذه الشهادة المعرفة الأساسية والمهارات التشغيلية اليومية التي تحتاجها فرق مراكز العمليات الأمنية لاكتشاف التهديدات والحوادث السيبرانية وتحليلها والاستجابة لها. يغطي البرنامج مفاهيم الأمن، والمراقبة الأمنية، وتحليل الأجهزة المضيفة، وتحليل اختراق الشبكات، والسياسات والإجراءات الأمنية، وهي الكفاءات الأساسية لمحلل أمن من المستوى الأول."
     },
     {
@@ -200,6 +201,8 @@
       "issuer": "IBM / Coursera",
       "year": "Jul 2025",
       "shortName": "أساسيات الأمن السيبراني — IBM",
+      "group": "professional",
+      "description": "تخصص يغطي أدوات وعمليات الأمن السيبراني، وإدارة الأنظمة، والهجمات السيبرانية، والشبكات، والتشفير، والتحقيق الجنائي الرقمي.",
       "document": "/certifications/ibm-cybersecurity-fundamentals-specialization.pdf"
     },
     {
@@ -224,11 +227,11 @@
       "document": "/certifications/introduction-cybersecurity-essentials.pdf"
     },
     {
-      "name": "الأمن السيبراني: حماية معلوماتك في المنزل",
+      "name": "التوعية بالأمن السيبراني للجميع",
       "issuer": "Kennesaw State University / Coursera",
       "year": "Jul 2025",
-      "shortName": "حماية المعلومات في المنزل",
-      "document": "/certifications/cybersecurity-protecting-information-at-home.pdf"
+      "shortName": "التوعية بالأمن السيبراني للجميع",
+      "document": "/certifications/cybersecurity-awareness-for-everyone.png"
     },
     {
       "name": "ورشة أساسيات OSINT واستطلاع المعلومات",

@@ -172,6 +172,7 @@
       "year": "In Progress",
       "shortName": "Cisco CyberOps Associate",
       "inProgress": true,
+      "group": "professional",
       "description": "Currently studying for the Cisco Certified CyberOps Associate exam. This credential validates the foundational knowledge and day-to-day operational skills used by Security Operations Centre teams to detect, analyse, and respond to cybersecurity threats and incidents. The programme covers security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures — the core competencies of a tier-one security analyst."
     },
     {
@@ -200,6 +201,8 @@
       "issuer": "IBM / Coursera",
       "year": "Jul 2025",
       "shortName": "IBM Cybersecurity Fundamentals",
+      "group": "professional",
+      "description": "A specialization covering cybersecurity tools and processes, system administration, cyber attacks, networking, cryptography, and digital forensics.",
       "document": "/certifications/ibm-cybersecurity-fundamentals-specialization.pdf"
     },
     {
@@ -224,11 +227,11 @@
       "document": "/certifications/introduction-cybersecurity-essentials.pdf"
     },
     {
-      "name": "Cybersecurity: Protecting your Information at Home",
+      "name": "Cybersecurity Awareness for Everyone",
       "issuer": "Kennesaw State University / Coursera",
       "year": "Jul 2025",
-      "shortName": "Protecting Information at Home",
-      "document": "/certifications/cybersecurity-protecting-information-at-home.pdf"
+      "shortName": "Cybersecurity Awareness for Everyone",
+      "document": "/certifications/cybersecurity-awareness-for-everyone.png"
     },
     {
       "name": "Exploring Reconnaissance: OSINT Essentials Workshop",

@@ -153,7 +153,9 @@ const en = {
   certificationsPageTitle: "Professional",
   certificationsPageHighlight: "Certifications",
   certificationsPageDescription:
-    "Continuous learning through industry-aligned certifications and workshops.",
+    "Professional credentials are listed first. Workshops and short courses are grouped separately.",
+  certProfessionalTitle: "Professional credentials",
+  certCoursesTitle: "Workshops & short courses",
   certificationsCount: (n: number) => `${n} certifications`,
   activitiesPageTag: "// activities",
   activitiesPageTitle: "Leadership &",
@@ -367,7 +369,9 @@ const ar = {
   certificationsPageTitle: "شهادات",
   certificationsPageHighlight: "مهنية",
   certificationsPageDescription:
-    "مسار تعلّم مستمر عبر شهادات وورش متوافقة مع متطلبات سوق العمل.",
+    "الشهادات المهنية في المقدمة، والورش والدورات القصيرة في مجموعة منفصلة.",
+  certProfessionalTitle: "شهادات مهنية",
+  certCoursesTitle: "ورش ودورات قصيرة",
   certificationsCount: (n: number) =>
     arCount(n, { one: "شهادة", two: "شهادتان", few: "شهادات", many: "شهادة" }),
   activitiesPageTag: "// الأنشطة",
