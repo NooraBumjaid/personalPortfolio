@@ -99,15 +99,15 @@
       "institution": "University of Bahrain",
       "slug": "university-of-bahrain",
       "period": "Sep 2022 – August 2026",
-      "description": "Fulfilled graduation requirements at the end of summer 2025/2026 (pending University Council approval). Cumulative GPA 2.78 (Good). Coursework includes secure software development, network fundamentals, web application development, security principles, risk assessment, and information security fundamentals.",
+      "description": "Graduated with a Bachelor of Science in Cybersecurity from the College of Information Technology at the end of summer 2025/2026, with a grade of Good and a cumulative GPA of 2.78. Coursework includes secure software development, network fundamentals, web application development, security principles, risk assessment, and information security fundamentals.",
       "documents": [
         {
-          "label": "Graduation statement",
-          "url": "/education/graduation-statement.jpg"
+          "label": "Degree certificate",
+          "url": "/education/degree-certificate.jpg"
         },
         {
-          "label": "Transcript",
-          "url": "/education/transcript.jpg"
+          "label": "Graduation statement",
+          "url": "/education/graduation-statement.png"
         }
       ]
     },
@@ -308,6 +308,36 @@
     }
   ],
   "leadership": [
+    {
+      "role": "AI Awareness Forum Participant",
+      "organization": "NCSC × BIBF",
+      "period": "September 2026",
+      "description": "Attended an AI awareness forum and specialized workshop organized by the National Cybersecurity Center (NCSC) in collaboration with BIBF. Explored AI opportunities and risks in the workplace, AI governance, cybersecurity, data protection, and the practical applications of AI agents.",
+      "skills": [
+        "Artificial Intelligence",
+        "AI Agents",
+        "Cybersecurity",
+        "Data Protection",
+        "AI Governance",
+        "Responsible AI"
+      ],
+      "featured": true,
+      "slug": "ncsc-bibf-ai-forum",
+      "documents": [
+        {
+          "label": "Discussion session",
+          "url": "/activities/ncsc-bibf-ai-forum/panel-session.jpg"
+        },
+        {
+          "label": "BIBF venue",
+          "url": "/activities/ncsc-bibf-ai-forum/bibf-venue.jpg"
+        },
+        {
+          "label": "AI Agents workshop",
+          "url": "/activities/ncsc-bibf-ai-forum/ai-agents-workshop.jpg"
+        }
+      ]
+    },
     {
       "role": "Web Development Workshop Facilitator",
       "organization": "American School of Bahrain",

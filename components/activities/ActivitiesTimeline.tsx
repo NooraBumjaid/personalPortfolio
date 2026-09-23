@@ -53,7 +53,7 @@ export function ActivitiesTimeline() {
                 {imageDocuments.length > 0 && "slug" in item && item.slug ? (
                   <div className="mt-4 flex justify-center">
                     <DocumentRouteLink
-                      label={ui.certificate}
+                      label={ui.media}
                       href={`/activities/${item.slug}/media`}
                     />
                   </div>
