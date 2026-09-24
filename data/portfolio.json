@@ -133,7 +133,7 @@
       "label": "Cybersecurity",
       "skills": [
         "Wireshark",
-        "Scapy",
+        "Packet Tracer",
         "Risk Assessment",
         "Security Analysis",
         "STRIDE",
@@ -155,18 +155,19 @@
         "JavaScript",
         "HTML/CSS",
         "Flask",
-        "SQLite"
+        "Database Management"
       ]
     },
     "tools": {
       "label": "Tools",
       "skills": [
-        "GitHub",
-        "Git (Version Control)",
+        "Version Control",
+        "Repository Hosting",
         "Figma",
         "SQL",
         "Microsoft Office",
-        "Google Sheets"
+        "Google Sheets",
+        "Render"
       ]
     }
   },
