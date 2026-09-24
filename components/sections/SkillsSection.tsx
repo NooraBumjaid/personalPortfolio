@@ -4,7 +4,7 @@ import { MotionSection, MotionStagger, MotionItem } from "@/components/motion/Mo
 import { useLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-type SkillCategoryKey = "cybersecurity" | "programming" | "webDevelopment" | "tools";
+type SkillCategoryKey = "cybersecurity" | "programming" | "tools";
 
 const categoryIcons: Record<SkillCategoryKey, ReactNode> = {
   cybersecurity: (
@@ -21,14 +21,6 @@ const categoryIcons: Record<SkillCategoryKey, ReactNode> = {
       strokeLinejoin="round"
       strokeWidth={1.5}
       d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-    />
-  ),
-  webDevelopment: (
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.264.26-2.465.732-3.553"
     />
   ),
   tools: (
@@ -49,10 +41,6 @@ const categoryStyles: Record<SkillCategoryKey, { gradient: string; glow: string 
   programming: {
     gradient: "from-cyber-purple/20 via-violet-500/10 to-transparent",
     glow: "group-hover:shadow-cyber-purple/10",
-  },
-  webDevelopment: {
-    gradient: "from-sky-500/20 via-cyber-cyan/10 to-transparent",
-    glow: "group-hover:shadow-sky-500/10",
   },
   tools: {
     gradient: "from-emerald-500/15 via-cyber-accent/10 to-transparent",
@@ -82,7 +70,7 @@ export function SkillsSection() {
           />
         </MotionSection>
 
-        <MotionStagger className="mt-12 grid gap-5 md:grid-cols-2">
+        <MotionStagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {categories.map(([key, category]) => {
             const styles = categoryStyles[key];
             const description = ui.skillCategoryMeta[key];

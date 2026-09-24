@@ -133,35 +133,40 @@
       "label": "Cybersecurity",
       "skills": [
         "Wireshark",
+        "Scapy",
         "Risk Assessment",
         "Security Analysis",
         "STRIDE",
-        "SQUARE"
+        "SQUARE",
+        "Network Security",
+        "Cryptography",
+        "OSINT",
+        "IT Auditing"
       ]
     },
     "programming": {
-      "label": "Programming",
+      "label": "Software & Web Development",
       "skills": [
+        "Software Development",
+        "Web Development",
         "Python",
         "Java",
         "C++",
-        "Database Management"
-      ]
-    },
-    "webDevelopment": {
-      "label": "Web Development",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Flask"
+        "JavaScript",
+        "HTML/CSS",
+        "Flask",
+        "SQLite"
       ]
     },
     "tools": {
       "label": "Tools",
       "skills": [
         "GitHub",
+        "Git (Version Control)",
         "Figma",
-        "Microsoft Office"
+        "SQL",
+        "Microsoft Office",
+        "Google Sheets"
       ]
     }
   },

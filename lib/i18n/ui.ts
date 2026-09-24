@@ -20,13 +20,12 @@ const en = {
   skillsTitle: "Technical",
   skillsHighlight: "competencies",
   skillsDescription:
-    "Core skills across cybersecurity, programming, web development, and professional tools.",
+    "Core skills across cybersecurity, software and web development, and professional tools.",
   skillsCount: (n: number) => `${n} skills`,
   skillCategoryMeta: {
-    cybersecurity: "Analysis, assessment, and secure design frameworks",
-    programming: "Languages used across academic and project work",
-    webDevelopment: "Frontend and backend web technologies",
-    tools: "Platforms and utilities for development and productivity",
+    cybersecurity: "Threat analysis, risk, and secure design",
+    programming: "Languages and web technologies from project work",
+    tools: "Development, data, and workplace tools",
   },
   experienceLabel: "Experience",
   experienceTitle: "Professional",
@@ -229,14 +228,13 @@ const ar = {
   skillsTitle: "كفاءات",
   skillsHighlight: "تقنية",
   skillsDescription:
-    "مجموعة مهارات في الأمن السيبراني، والبرمجة، وتطوير الويب، والأدوات المهنية.",
+    "مجموعة مهارات في الأمن السيبراني، وتطوير البرمجيات والويب، والأدوات المهنية.",
   skillsCount: (n: number) =>
     arCount(n, { one: "مهارة", two: "مهارتان", few: "مهارات", many: "مهارة" }),
   skillCategoryMeta: {
-    cybersecurity: "تحليل المخاطر، وتقييم الأمان، وأطر التصميم الآمن",
-    programming: "لغات البرمجة في المشاريع الأكاديمية والعملية",
-    webDevelopment: "تقنيات بناء الواجهات والخوادم",
-    tools: "منصات وأدوات التطوير والإنتاجية",
+    cybersecurity: "تحليل التهديدات، وتقييم المخاطر، والتصميم الآمن",
+    programming: "لغات البرمجة وتقنيات الويب المستخدمة في المشاريع",
+    tools: "أدوات التطوير والبيانات والعمل",
   },
   experienceLabel: "الخبرة",
   experienceTitle: "مسار",

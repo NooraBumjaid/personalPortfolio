@@ -133,35 +133,40 @@
       "label": "الأمن السيبراني",
       "skills": [
         "Wireshark",
+        "Scapy",
         "Risk Assessment",
         "Security Analysis",
         "STRIDE",
-        "SQUARE"
+        "SQUARE",
+        "أمن الشبكات",
+        "التشفير",
+        "OSINT",
+        "تدقيق تكنولوجيا المعلومات"
       ]
     },
     "programming": {
-      "label": "البرمجة",
+      "label": "تطوير البرمجيات والويب",
       "skills": [
+        "تطوير البرمجيات",
+        "تطوير الويب",
         "Python",
         "Java",
         "C++",
-        "Database Management"
-      ]
-    },
-    "webDevelopment": {
-      "label": "تطوير الويب",
-      "skills": [
-        "HTML",
-        "CSS",
-        "Flask"
+        "JavaScript",
+        "HTML/CSS",
+        "Flask",
+        "SQLite"
       ]
     },
     "tools": {
       "label": "الأدوات",
       "skills": [
         "GitHub",
+        "Git (التحكم بالإصدارات)",
         "Figma",
-        "Microsoft Office"
+        "SQL",
+        "Microsoft Office",
+        "Google Sheets"
       ]
     }
   },
